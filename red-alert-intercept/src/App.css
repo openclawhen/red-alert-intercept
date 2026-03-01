@@ -1,0 +1,63 @@
+.app {
+  min-height: 100vh;
+  background: #070c14;
+  color: #e8f1ff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mode-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.hud {
+  display: flex;
+  gap: 16px;
+  background: #0f1b2a;
+  border: 1px solid #1b3552;
+  padding: 8px 12px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.game-canvas {
+  width: min(100%, 1100px);
+  max-width: 100%;
+  border: 1px solid #29496b;
+  border-radius: 10px;
+  align-self: center;
+  cursor: crosshair;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.summary,
+.error {
+  background: #15273a;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #2c4f74;
+}
+
+button,
+select {
+  background: #1d4e89;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
