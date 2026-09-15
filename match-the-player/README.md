@@ -3,9 +3,14 @@
 A web rebuild of the Pygame game at
 [HenAsayag/Match_The_Player](https://github.com/HenAsayag/Match_The_Player).
 
-The default mode, **Original**, is the Pygame game rule for rule: falling cards,
-four corners, drag to place, 60 seconds, no lives, raw scoring. Classic, Endless
-and Time Attack are the faster tap version.
+Two skins ship side by side:
+
+* **Classic** — the original screens, art and fonts on the 1280×720 canvas,
+  scaled (and rotated on a portrait phone) to fit. Every menu, the stadium, the
+  card, the TOP 5 board.
+* **Modern** — a mobile-first layout for the new leagues. Its default mode,
+  *Original*, is the Pygame game rule for rule; Classic, Endless and Time Attack
+  are the faster tap version.
 
 * **`web/`** — the browser game. Plain HTML/CSS/JS, no build step, no
   dependencies, ready to deploy to Vercel. Start here: [`web/README.md`](web/README.md).

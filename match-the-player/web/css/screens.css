@@ -32,6 +32,27 @@
 .home__row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .home__footnote { color: var(--text-faint); font-size: 0.72rem; opacity: 0.7; }
 
+/* The way back into the original Pygame screens */
+.btn--classic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 11px 18px;
+  background:
+    linear-gradient(135deg, rgba(255, 210, 90, 0.14), rgba(255, 255, 255, 0.04));
+  border-color: rgba(255, 210, 90, 0.28);
+  color: var(--text);
+}
+.btn--classic:hover { border-color: rgba(255, 210, 90, 0.5); }
+.btn__kicker {
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: var(--warn);
+  opacity: 0.85;
+}
+
 /* ---------- PICKER SCREENS ------------------------------------------------ */
 .screen--pick { justify-content: flex-start; }
 

@@ -7,6 +7,7 @@ import { DIFFICULTIES, MODES, getDifficulty, getMode } from './config.js';
 import { loadLeagues, loadClubLogos, loadPlayers, getLeague, poolFor } from './data.js';
 import { initGame, startGame, stopGame } from './game.js';
 import { initArena, startArena, stopArena } from './arena.js';
+import { openClassic } from './classic.js';
 import { escapeHtml, dirFor } from './components.js';
 import { store } from './storage.js';
 import { sfx, setMuted, isMuted, setMusic, unlock } from './audio.js';
@@ -321,6 +322,22 @@ function wireGlobalClicks() {
         break;
       case 'back':
         back();
+        break;
+      case 'classic':
+        stopGame();
+        stopArena();
+        openClassic(leagues, async (jumpToLeague) => {
+          // the classic mode-2 screen can hand us straight to a modern league
+          if (jumpToLeague && getLeague(leagues, jumpToLeague)?.available) {
+            selection.league = store.set('league', jumpToLeague);
+            renderLeagues();
+            await renderDifficulty();
+            stack.splice(0, stack.length, 'home', 'league');
+            show('difficulty');
+            return;
+          }
+          goHome();
+        }).catch(showFatal);
         break;
       case 'how-to':
         openHowTo();

@@ -37,6 +37,34 @@ Or, in the Vercel dashboard: *Add New → Project*, pick the repo, set the
 
 ---
 
+## Three ways to play
+
+### Classic — the original screens, untouched
+
+Press **Play the original screens** on the home screen and the whole 2019 game
+comes back: `home_background`, the mode picker, the difficulty screen with its
+cartoon buttons, `rules.png`, the TOP 5 board, the stadium pitch with the four
+club crests, `Card.png`, the corner artwork, the mute button, and the two
+original fonts (`nrkis.ttf`, `OzradCLM.otf`).
+
+It runs on a fixed **1280 × 720 stage** — the original canvas — scaled to fit
+whatever screen is holding it. Every button is an invisible rect sitting exactly
+where `main.py` put it, over the label painted into the background. On a
+portrait screen the stage is rotated 90°, so turning the phone sideways fills
+it; turn the phone and the picture stays upright either way, whether or not
+rotation lock is on.
+
+The art was re-encoded from PNG to WebP: **10.8 MB → 965 KB**, same pictures.
+It only downloads when you open the classic screens.
+
+Two things there are not quite the original, on purpose:
+
+* **The TOP 5 board** shows your local records rather than the GitHub Gist
+  leaderboard, which needed a personal access token in the source.
+* **Mode 2** said "PREMIER LEAGUE — Soon…" and did nothing at all
+  (`# כרגע אין לוגיקה למוד 2` in `main.py`). It now explains itself and offers
+  to take you to the Premier League, which exists in the modern skin.
+
 ## Two ways to play
 
 ### Original — the Pygame game, rule for rule
@@ -119,9 +147,11 @@ web/
 │   ├── base.css                design tokens, reset, buttons, panels
 │   ├── screens.css             home / league / difficulty / game over / records
 │   ├── game.css                HUD, player card, club grid, answer animations
-│   └── arena.css               Original mode: corners, falling card, points burst
+│   ├── arena.css               Original mode: corners, falling card, points burst
+│   └── classic.css             the original screens on a scaled 1280x720 stage
 ├── js/
 │   ├── main.js                 boot + navigation + menus
+│   ├── classic.js              the original 1280x720 screens
 │   ├── game.js                 the tap screen controller
 │   ├── arena.js                the Original mode falling-card arena
 │   ├── engine.js               the rules (pure state, no DOM)
@@ -135,6 +165,8 @@ web/
 │   ├── club-logos.json         which clubs have a real crest file
 │   └── players/*.json          one file per league
 └── assets/
+    ├── classic/                the original Pygame art, re-encoded to WebP
+    ├── fonts/                  nrkis.ttf and OzradCLM.otf, the original fonts
     ├── players/<league>/       player photos (lazy-loaded)
     ├── clubs/                  club crests — empty, see below
     ├── ui/                     icons
@@ -206,17 +238,18 @@ right to use.
   the original game were the four Israeli giants, and they are now clubs:
   red = Hapoel Tel Aviv, green = Maccabi Haifa, blue = Maccabi Tel Aviv,
   yellow = Beitar Jerusalem.
+* **Every screen and every pixel of art**, in the Classic skin.
 * **Difficulty levels, high scores, the mute toggle, the rules screen.**
 
-Deliberately left behind: the 1280×720 fixed canvas, the hard-coded Hebrew
-virtual keyboard, the GitHub Gist high-score board (it needed a personal access
-token in the source), and the 27 MB tutorial video.
+Deliberately left behind: the GitHub Gist high-score board (it needed a personal
+access token in the source) and the 27 MB tutorial video. The 1280×720 canvas and
+the Hebrew virtual keyboard are both still there — in the Classic skin.
 
 ---
 
 ## Performance notes
 
-* First load is roughly **150 KB** of HTML/CSS/JS/JSON. Player photos are
+* First load is roughly **155 KB** of HTML/CSS/JS/JSON. Player photos are
   `loading="lazy"`, so only the cards you actually see are fetched.
 * Each league's player file is fetched once, on demand, and cached in memory.
 * All sound effects and the background music are generated with the Web Audio
@@ -236,6 +269,8 @@ Pygame behaviour. It has no dependencies — it runs the real engine against the
 real JSON, so a typo in a player file (an answer that isn't a club in that league,
 a duplicate id, an empty difficulty pool) fails the run.
 
+`tests/classic.test.mjs` walks the original screens — the painted buttons, the
+fonts, the stage and its rotation, a scored drag, and the TOP 5 alignment.
 `tests/arena.test.mjs` plays a full Original round in a browser: it drags cards
 into the right and wrong corners, lets one fall, and checks every number against
 the rules above. `tests/browser.test.mjs` walks the tap modes in a real browser — every screen,

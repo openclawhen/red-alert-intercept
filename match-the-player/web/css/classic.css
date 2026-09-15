@@ -1,0 +1,264 @@
+/* ==========================================================================
+   classic.css - the original 1280x720 Pygame screens, pixel for pixel.
+
+   Everything lives on a fixed 1280x720 stage which is scaled (and, on a
+   portrait screen, rotated) to fit whatever device is holding it. Every
+   coordinate below is the coordinate from main.py.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Nrkis";
+  src: url("../assets/fonts/nrkis.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ozrad";
+  src: url("../assets/fonts/OzradCLM.otf") format("opentype");
+  font-display: swap;
+}
+
+.classic-root {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: #05070d;
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.classic-stage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1280px;
+  height: 720px;
+  transform-origin: center center;   /* JS sets translate/rotate/scale */
+  font-family: "Nrkis", system-ui, sans-serif;
+  color: #fff;
+  overflow: hidden;
+  background: #000;
+}
+
+.classic-screen { position: absolute; inset: 0; }
+.classic-screen[hidden] { display: none !important; }
+
+.classic-bg {
+  position: absolute;
+  inset: 0;
+  width: 1280px;
+  height: 720px;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Invisible buttons sitting over the labels painted into the background,
+   exactly where main.py put their rects. */
+.classic-hit {
+  position: absolute;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 120ms ease, transform 120ms ease;
+}
+.classic-hit:hover { background: rgba(255, 255, 255, 0.13); }
+.classic-hit:active { transform: scale(0.97); background: rgba(255, 255, 255, 0.2); }
+.classic-hit:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+
+.classic-img { position: absolute; pointer-events: none; }
+.classic-img--button { pointer-events: auto; cursor: pointer; }
+.classic-img--button:active { transform: scale(0.97); }
+
+/* ---------- text drawn by the game, in the original fonts ------------------ */
+.classic-text { position: absolute; white-space: nowrap; pointer-events: none; }
+.classic-hud-name  { top: 0px;  right: 180px; font-size: 30px; }
+.classic-hud-score { top: 37px; right: 170px; font-size: 30px; }
+
+.classic-score { left: 660px; top: 52px;  font-family: "Ozrad", monospace; font-size: 40px; }
+.classic-time  { left: 660px; top: 112px; font-family: "Ozrad", monospace; font-size: 40px; }
+
+/* points_change: the original printed it dead centre for one second */
+.classic-burst {
+  position: absolute;
+  left: 640px; top: 360px;
+  transform: translate(-50%, -50%);
+  font-family: "Ozrad", monospace;
+  font-size: 100px;
+  color: #fff;
+  text-shadow: 0 6px 24px rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  pointer-events: none;
+}
+.classic-burst.is-live { animation: classic-burst 1000ms ease-out both; }
+@keyframes classic-burst {
+  0%   { opacity: 0; transform: translate(-50%, -42%) scale(0.75); }
+  15%  { opacity: 1; transform: translate(-50%, -50%) scale(1.06); }
+  75%  { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -62%) scale(0.95); }
+}
+
+/* ---------- the pitch corners ---------------------------------------------- */
+.classic-corner { position: absolute; pointer-events: none; }
+.classic-corner img { position: absolute; opacity: 0; transition: opacity 110ms ease; }
+.classic-corner.is-hot img { opacity: 1; }
+
+/* ---------- the falling card ------------------------------------------------ */
+.classic-card {
+  position: absolute;
+  width: 294px;
+  height: 408px;
+  top: 0; left: 0;
+  cursor: grab;
+  will-change: transform;
+  touch-action: none;
+}
+.classic-card.is-held { cursor: grabbing; z-index: 5; }
+.classic-card__frame { position: absolute; inset: 0; width: 294px; height: 408px; pointer-events: none; }
+/* the original blitted a 361x246 photo over a 294x408 card, so it overhangs */
+.classic-card__photo {
+  position: absolute;
+  width: 361px; height: 246px;
+  left: 50%; top: 50%;
+  transform: translate(-50%, calc(-50% - 10px));
+  object-fit: cover;
+  pointer-events: none;
+}
+.classic-card__initials {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, calc(-50% - 10px));
+  font-size: 64px; font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  pointer-events: none;
+}
+.classic-card__name {
+  position: absolute;
+  left: 0; right: 0;
+  top: calc(50% + 204px - 58px);
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: "Ozrad", sans-serif;
+  font-size: 28px;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+}
+.classic-card.is-snapped { transition: transform 180ms ease, opacity 200ms ease 100ms; opacity: 0; }
+.classic-card.is-wrong { animation: classic-shake 360ms both; }
+@keyframes classic-shake {
+  0%, 100% { margin-left: 0; }
+  20% { margin-left: -12px; }
+  45% { margin-left: 10px; }
+  70% { margin-left: -6px; }
+}
+
+/* ---------- the top-5 table ------------------------------------------------- */
+.classic-rank {
+  position: absolute;
+  left: 263px;
+  width: 797px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 34px;
+  font-size: 34px;
+  color: #1a1a1a;
+  pointer-events: none;
+}
+.classic-rank--empty { color: rgba(0, 0, 0, 0.35); }
+
+/* ---------- the Hebrew keyboard from VirtualKeyboard ------------------------ */
+.classic-key {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  background: rgba(40, 40, 40, 0.55);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  color: #fff;
+  font-family: "Nrkis", sans-serif;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.classic-key:active { background: rgba(255, 255, 255, 0.3); }
+.classic-name-value {
+  position: absolute;
+  left: 440px; top: 290px;
+  width: 400px; height: 100px;
+  display: grid; place-items: center;
+  font-size: 46px;
+  color: #fff;
+  pointer-events: none;
+}
+
+/* ---------- overlays --------------------------------------------------------- */
+.classic-note {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(3, 6, 12, 0.82);
+  z-index: 8;
+}
+.classic-note__box {
+  max-width: 760px;
+  padding: 36px 40px;
+  border-radius: 20px;
+  background: #101826;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.classic-note__box p { font-size: 30px; line-height: 1.45; }
+.classic-note__box small { font-size: 21px; color: #9aa6bd; display: block; }
+.classic-note__actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.classic-note__btn {
+  font-family: "Nrkis", sans-serif;
+  font-size: 26px;
+  padding: 12px 26px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+}
+.classic-note__btn--go { background: #00ff9d; color: #04110c; border-color: transparent; font-weight: 700; }
+
+/* "turn your phone" hint, shown once while the stage is rotated */
+.classic-rotate-hint {
+  position: fixed;
+  left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  z-index: 60;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(8, 12, 20, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #e6ecf7;
+  font: 600 13px/1 system-ui, sans-serif;
+  display: flex; align-items: center; gap: 8px;
+  animation: hint-in 400ms ease both;
+}
+@keyframes hint-in { from { opacity: 0; transform: translate(-50%, 10px); } }
+
+/* the escape hatch back to the modern skin, always reachable */
+.classic-exit {
+  position: fixed;
+  top: calc(10px + env(safe-area-inset-top, 0px));
+  left: 10px;
+  z-index: 60;
+  width: 38px; height: 38px;
+  display: grid; place-items: center;
+  border-radius: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(8, 12, 20, 0.7);
+  color: #e6ecf7;
+  font-size: 16px;
+  cursor: pointer;
+}

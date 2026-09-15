@@ -13,6 +13,8 @@ const DEFAULTS = {
   mode: 'original',
   bestStreak: 0,
   gamesPlayed: 0,
+  playerName: '',
+  classicRotateHintSeen: false,
   // best scores keyed by "<league>|<difficulty>|<mode>"
   best: {},
 };

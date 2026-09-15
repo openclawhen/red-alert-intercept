@@ -42,6 +42,36 @@ under blue).
 4. **The player data.** All 178 entries migrated, weights intact.
 5. **The photos**, re-encoded (11 MB PNG → 2.1 MB WebP, lazy-loaded).
 
+## The original screens are still the original screens
+
+`web/js/classic.js` renders the 2019 game as it was: the same backgrounds, the
+same fonts, `Card.png`, the corner artwork, the mute button, the TOP 5 board and
+the Hebrew keyboard, on the original 1280×720 canvas scaled to fit the device
+(and rotated when the screen is portrait, so turning the phone fills it).
+
+The menu backgrounds have their labels **painted into the image** — that is why
+`main.py` positioned buttons by rendering strings of spaces and taking the
+resulting rect. The web version does the same thing honestly: invisible buttons
+at the coordinates from `main.py`, sitting over the painted labels. Overlaying
+those rects on the artwork shows they land exactly on the labels.
+
+The art was re-encoded PNG → WebP: **10.8 MB → 965 KB**, and only downloads when
+the classic screens are opened.
+
+Two details had to change:
+
+* `mute.png` / `unmute.png` — `main.py` does
+  `blit(unmute_image if not muted else mute_image)`, so the file named "unmute"
+  is what shows while the sound is **on**. The web version copies that, backwards
+  names and all.
+* The TOP 5 board reads local records instead of the three GitHub Gists, which
+  needed a personal access token compiled into the game.
+
+And one dead end got a purpose: **mode 2**. Its button reads
+"PREMIER LEAGUE — Soon…", and clicking it did nothing
+(`# כרגע אין לוגיקה למוד 2, אבל השארתי אם תרצה להוסיף`). It now says so, and
+offers to open the Premier League, which the modern skin actually has.
+
 ## Two modes, because the original is worth keeping as it was
 
 **Original mode** (`js/arena.js`) is the Pygame game, rule for rule: cards
@@ -67,6 +97,10 @@ streaks and combos.
   itself did not go anywhere — it is Original mode, and it is the default.
 * **Six boolean screen flags → a screen stack** (`js/main.js`).
 * **Fixed 1280×720 canvas → responsive DOM**, built for a 390×844 phone first.
+* **The menu art is reused, not redrawn.** Both skins ship: the original screens
+  for the 2019 game, and a mobile-first layout for the new leagues, which the
+  original backgrounds cannot carry because their Hebrew labels and the four
+  Israeli crests are baked into the pictures.
 * **Hard-coded dicts → JSON files** with a documented shape, so players and
   whole leagues are added by editing data, not code.
 * **Rules image + tutorial video → a real How-to-play panel.**
