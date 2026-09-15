@@ -3,7 +3,7 @@
    The UI calls start/answer/tick and reads `state` back.
    ========================================================================== */
 
-import { SCORING, comboFor } from './config.js';
+import { SCORING, comboFor, secondsFor, multiplierFor } from './config.js';
 import { buildQuestion, createQueue, poolFor } from './data.js';
 
 export function createGame({ league, difficulty, mode, players }) {
@@ -13,6 +13,14 @@ export function createGame({ league, difficulty, mode, players }) {
   }
 
   const queue = createQueue(pool);
+
+  // Original mode scored exactly what the old character_color_map said: no
+  // streak bonus, no difficulty scaling, and no floor under the score.
+  const useCombo = mode.useCombo !== false;
+  const clampScore = mode.clampScore !== false;
+  const multiplier = multiplierFor(difficulty, mode);
+  const roundSeconds = secondsFor(difficulty, mode);
+  const optionCount = mode.options ?? difficulty.options;
 
   const state = {
     score: 0,
@@ -25,16 +33,26 @@ export function createGame({ league, difficulty, mode, players }) {
     correct: 0,
     partial: 0,
     wrong: 0,
-    timeLeft: mode.useTimer ? difficulty.seconds : Infinity,
-    maxTime: mode.useTimer ? difficulty.seconds : 0,
+    dropped: 0,
+    timeLeft: mode.useTimer ? roundSeconds : Infinity,
+    maxTime: mode.useTimer ? roundSeconds : 0,
     poolSize: pool.length,
     question: null,
     over: false,
     reason: '',
   };
 
-  function nextQuestion() {
-    state.question = buildQuestion(queue.next(), league, difficulty);
+  /**
+   * Draw the next question.
+   * `fixedClubs` pins the club buttons (the arena keeps the same four corners
+   * while cards are still in play), and only players answerable with those
+   * clubs are drawn.
+   */
+  function nextQuestion(fixedClubs = null) {
+    const fixedIds = fixedClubs ? fixedClubs.map((c) => (typeof c === 'string' ? c : c.id)) : null;
+    const player = fixedIds ? queue.nextMatching(fixedIds) : queue.next();
+    if (!player) return null;
+    state.question = buildQuestion(player, league, difficulty, { fixedClubs, optionCount });
     state.asked += 1;
     return state.question;
   }
@@ -49,9 +67,9 @@ export function createGame({ league, difficulty, mode, players }) {
     if (option.played) {
       state.streak += 1;
       state.bestStreak = Math.max(state.bestStreak, state.streak);
-      state.combo = comboFor(state.streak);
+      state.combo = useCombo ? comboFor(state.streak) : 1;
 
-      const gained = Math.round(option.points * state.combo * difficulty.scoreMultiplier);
+      const gained = Math.round(option.points * state.combo * multiplier);
       state.score += gained;
 
       if (option.isMain) state.correct += 1;
@@ -73,7 +91,7 @@ export function createGame({ league, difficulty, mode, players }) {
     state.streak = 0;
     state.combo = 1;
     state.wrong += 1;
-    state.score = Math.max(0, state.score - SCORING.wrongPenalty);
+    state.score = applyPenalty(SCORING.wrongPenalty);
 
     if (mode.useLives) {
       state.lives -= 1;
@@ -85,6 +103,24 @@ export function createGame({ league, difficulty, mode, players }) {
     }
 
     return { verdict: 'wrong', gained: -SCORING.wrongPenalty, combo: 1, points: 0 };
+  }
+
+  function applyPenalty(amount) {
+    const next = state.score - amount;
+    return clampScore ? Math.max(0, next) : next;
+  }
+
+  /**
+   * The original docked 50 points when a card fell off the bottom of the screen.
+   * It is a miss, not a wrong answer, so it does not count against accuracy.
+   */
+  function dropCard() {
+    if (state.over) return null;
+    state.streak = 0;
+    state.combo = 1;
+    state.dropped += 1;
+    state.score = applyPenalty(SCORING.dropPenalty);
+    return { verdict: 'dropped', gained: -SCORING.dropPenalty, combo: 1, points: 0 };
   }
 
   /** Advance the clock by `seconds`. No-op for modes without a timer. */
@@ -106,5 +142,5 @@ export function createGame({ league, difficulty, mode, players }) {
     return Math.round(((state.correct + state.partial) / answered) * 100);
   }
 
-  return { state, nextQuestion, answer, tick, end, accuracy, league, difficulty, mode };
+  return { state, nextQuestion, answer, dropCard, tick, end, accuracy, league, difficulty, mode };
 }

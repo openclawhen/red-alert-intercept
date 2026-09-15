@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/screens.css" />
   <link rel="stylesheet" href="css/game.css" />
+  <link rel="stylesheet" href="css/arena.css" />
 </head>
 <body>
   <div class="pitch-bg" aria-hidden="true">
@@ -129,6 +130,36 @@
       <div class="club-grid" id="club-grid"><!-- club options rendered here --></div>
 
       <div class="feedback" id="feedback" aria-live="polite"></div>
+    </section>
+
+
+    <!-- ============ ORIGINAL MODE (falling cards) ============ -->
+    <section class="screen screen--arena" data-screen="arena" hidden>
+      <header class="hud">
+        <button class="btn btn--icon" type="button" data-action="quit" aria-label="Back to menu">&larr;</button>
+        <div class="hud__score">
+          <span class="hud__score-value" id="arena-score">0</span>
+        </div>
+        <span class="chip chip--clock" id="arena-clock">60s</span>
+      </header>
+
+      <div class="hud__bar">
+        <div class="hud__bar-fill" id="arena-bar"></div>
+      </div>
+
+      <div class="hud__meta">
+        <span class="chip" id="arena-cards-count">Cards 0</span>
+        <span class="chip chip--quiet">Drag the card into his club</span>
+      </div>
+
+      <div class="arena" id="arena">
+        <div class="corner corner--tl"></div>
+        <div class="corner corner--tr"></div>
+        <div class="corner corner--bl"></div>
+        <div class="corner corner--br"></div>
+        <div class="arena__cards" id="arena-cards"></div>
+        <div class="arena__burst" id="arena-feedback" aria-live="polite"></div>
+      </div>
     </section>
 
     <!-- =================== GAME OVER =================== -->

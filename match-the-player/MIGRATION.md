@@ -42,17 +42,36 @@ under blue).
 4. **The player data.** All 178 entries migrated, weights intact.
 5. **The photos**, re-encoded (11 MB PNG → 2.1 MB WebP, lazy-loaded).
 
+## Two modes, because the original is worth keeping as it was
+
+**Original mode** (`js/arena.js`) is the Pygame game, rule for rule: cards
+thrown upward and falling under gravity, four fixed corners, drag to place,
+60 seconds, no lives, raw scoring, −50 for a wrong corner *and* −50 for a card
+that falls off the bottom, and a score that is allowed to go negative.
+
+The physics come straight out of `main.py`. At 60 fps on a 720-tall screen the
+card left the floor at 29 px/frame on easy, 19 on hard and 14 on impossible,
+under 0.8 gravity (0.5 on impossible), and counted as fallen once its centre
+passed `720 + 180`. Simulated, that gives a catch window of **1.42–1.55s on
+easy, 1.05–1.23s on hard, 1.27–1.50s on impossible**. Those constants are stored
+per second and relative to the arena height, so the window is identical on a
+phone.
+
+**Classic / Endless / Time Attack** are the faster tap version, with lives,
+streaks and combos.
+
 ## What was rebuilt rather than ported
 
-* **Drag-a-bouncing-card → tap a club.** Dragging a physics object is miserable
-  on a phone and it was the main thing slowing the game down. Tapping one of
-  four (or six) club tiles is instant, and the round now moves on in under a
-  second.
+* **A tap alternative to the drag.** Dragging a physics object is hard work on a
+  phone, so the newer modes replace it with four (or six) club buttons. The drag
+  itself did not go anywhere — it is Original mode, and it is the default.
 * **Six boolean screen flags → a screen stack** (`js/main.js`).
 * **Fixed 1280×720 canvas → responsive DOM**, built for a 390×844 phone first.
 * **Hard-coded dicts → JSON files** with a documented shape, so players and
   whole leagues are added by editing data, not code.
 * **Rules image + tutorial video → a real How-to-play panel.**
+* **`MOUSEBUTTONUP` anywhere → pointer events with window-level listeners**, so a
+  drag survives the finger leaving the card.
 * **Gist high scores → localStorage.** The Gist approach needed a GitHub token
   shipped inside the game; there is no safe way to do that in a public web app.
   Records are local for now; a proper leaderboard needs a backend.

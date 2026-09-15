@@ -10,7 +10,7 @@ const DEFAULTS = {
   music: false,
   league: 'premier-league',
   difficulty: 'easy',
-  mode: 'classic',
+  mode: 'original',
   bestStreak: 0,
   gamesPlayed: 0,
   // best scores keyed by "<league>|<difficulty>|<mode>"

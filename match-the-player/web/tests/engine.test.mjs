@@ -3,7 +3,8 @@
 
 import { readFileSync } from 'node:fs';
 import { createGame } from '../js/engine.js';
-import { getDifficulty, getMode, comboFor } from '../js/config.js';
+import * as cfg from '../js/config.js';
+const { getDifficulty, getMode, comboFor } = cfg;
 
 /* The data modules use fetch(), so give Node a tiny file-backed stand-in. */
 globalThis.fetch = async (url) => {
@@ -24,6 +25,8 @@ const assert = (cond, msg) => { if (!cond) throw new Error(msg); };
 
 const leagues = await loadLeagues();
 const playable = leagues.filter((l) => l.available);
+const await0 = {};
+for (const lg of playable) await0[lg.id] = await loadPlayers(lg.id);
 
 console.log('\n# data integrity');
 for (const league of playable) {
@@ -179,6 +182,105 @@ check('accuracy is reported correctly', () => {
   g.nextQuestion(); g.answer(g.state.question.options.find((o) => o.isMain));
   g.nextQuestion(); g.answer(g.state.question.options.find((o) => !o.played));
   assert(g.accuracy() === 50, `accuracy ${g.accuracy()}`);
+});
+
+console.log('\n# original mode (the Pygame rules)');
+const { pickCorners } = await import('../js/data.js');
+const original = (diff = 'easy') => newGame(diff, 'original');
+
+check('the round is 60 seconds at every difficulty', () => {
+  ['easy', 'hard', 'impossible'].forEach((d) => {
+    const g = original(d);
+    assert(g.state.maxTime === 60, `${d} ran ${g.state.maxTime}s`);
+  });
+});
+
+check('there are no lives', () => {
+  const g = original();
+  for (let i = 0; i < 6; i += 1) {
+    g.nextQuestion();
+    g.answer(g.state.question.options.find((o) => !o.played));
+  }
+  assert(!g.state.over, 'the round ended early');
+});
+
+check('no streak bonus and no difficulty multiplier', () => {
+  const g = original('impossible');   // impossible scales x2 in the newer modes
+  let expected = 0;
+  for (let i = 0; i < 6; i += 1) {
+    const q = g.nextQuestion();
+    const main = q.options.find((o) => o.isMain);
+    expected += main.points;          // raw, straight out of the data
+    g.answer(main);
+  }
+  assert(g.state.combo === 1, `combo climbed to ${g.state.combo}`);
+  assert(g.state.score === expected, `score ${g.state.score}, expected ${expected}`);
+});
+
+check('the main club is worth exactly 100', () => {
+  const g = original();
+  const q = g.nextQuestion();
+  const main = q.options.find((o) => o.isMain);
+  const r = g.answer(main);
+  assert(r.gained === 100, `scored ${r.gained}`);
+});
+
+check('the score is allowed to go negative', () => {
+  const g = original();
+  g.nextQuestion();
+  g.answer(g.state.question.options.find((o) => !o.played));
+  assert(g.state.score === -50, `score was ${g.state.score}`);
+});
+
+check('a dropped card costs 50 and breaks the streak', () => {
+  const g = original();
+  const q = g.nextQuestion();
+  g.answer(q.options.find((o) => o.isMain));
+  const before = g.state.score;
+  const r = g.dropCard();
+  assert(r.gained === -50, 'penalty');
+  assert(g.state.score === before - 50, `score ${g.state.score}`);
+  assert(g.state.streak === 0, 'streak not reset');
+  assert(g.state.dropped === 1, 'not counted');
+});
+
+check('a drop is a miss, not a wrong answer', () => {
+  const g = original();
+  g.nextQuestion();
+  g.answer(g.state.question.options.find((o) => o.isMain));
+  g.dropCard();
+  assert(g.accuracy() === 100, `accuracy ${g.accuracy()}`);
+});
+
+check('four corners, every one of them a club with players', () => {
+  for (const lg of playable) {
+    const ps = await0[lg.id];
+    const cs = pickCorners(poolFor(ps, lg, getDifficulty('easy')), lg, 4);
+    assert(cs.length === Math.min(4, lg.clubs.length), `${lg.id}: ${cs.length} corners`);
+    assert(new Set(cs.map((c) => c.id)).size === cs.length, `${lg.id}: duplicate corner`);
+    const answerable = cs.some((c) =>
+      poolFor(ps, lg, getDifficulty('easy')).some((p) => p.mainClubIds.includes(c.id)));
+    assert(answerable, `${lg.id}: no corner can be answered`);
+  }
+});
+
+check('the corners stay put and every card fits them', () => {
+  const g = original();
+  const cs = pickCorners(poolFor(players, league, getDifficulty('easy')), league, 4);
+  const ids = cs.map((c) => c.id);
+  for (let i = 0; i < 25; i += 1) {
+    const q = g.nextQuestion(ids);
+    assert(q, 'ran out of players for these corners');
+    assert(q.options.length === 4, `${q.options.length} options`);
+    assert(q.options.every((o, n) => o.id === ids[n]), 'corner order changed mid-round');
+    assert(q.options.some((o) => o.isMain), `${q.player.id} cannot be answered from these corners`);
+  }
+});
+
+check('the name is on the card even on impossible', () => {
+  const { namesShown } = cfg;
+  assert(namesShown(getDifficulty('impossible'), getMode('original')) === true, 'name hidden');
+  assert(namesShown(getDifficulty('impossible'), getMode('classic')) === false, 'classic should hide it');
 });
 
 console.log(`\n${passed} passed, ${failures.length} failed`);

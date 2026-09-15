@@ -108,14 +108,31 @@ export function shuffle(list) {
 export function createQueue(pool) {
   let order = shuffle(pool);
   let index = 0;
+
+  function take() {
+    if (index >= order.length) {
+      order = shuffle(pool);
+      index = 0;
+    }
+    return order[index++];
+  }
+
   return {
     size: pool.length,
-    next() {
-      if (index >= order.length) {
-        order = shuffle(pool);
-        index = 0;
+    next: take,
+
+    /**
+     * The next player who can be answered with one of `clubIds`.
+     * Used by the arena, which keeps the same four corners while cards are in
+     * play. Returns null when nobody in the pool fits.
+     */
+    nextMatching(clubIds) {
+      const wanted = new Set(clubIds);
+      for (let tries = 0; tries < pool.length; tries += 1) {
+        const player = take();
+        if (player.mainClubIds.some((id) => wanted.has(id))) return player;
       }
-      return order[index++];
+      return null;
     },
   };
 }
@@ -129,8 +146,17 @@ const SECONDARY_CHANCE = 0.55;
  * Scores mirror the original game - the main club is worth 100, a club he really
  * played for but not the longest is worth its share of the career.
  */
-export function buildQuestion(player, league, difficulty) {
+export function buildQuestion(player, league, difficulty, options = {}) {
+  const { fixedClubs = null, optionCount = difficulty.options } = options;
   const byId = new Map(league.clubs.map((c) => [c.id, c]));
+
+  // The arena pins its four corners, so the clubs are handed in rather than drawn.
+  // Accept either club objects or plain ids.
+  if (fixedClubs) {
+    const pinned = fixedClubs.map((c) => (typeof c === 'string' ? byId.get(c) : c)).filter(Boolean);
+    return describeOptions(player, pinned, byId);
+  }
+
   const played = player.clubs.filter((c) => byId.has(c.id));
 
   const main = played.find((c) => player.mainClubIds.includes(c.id)) || played[0];
@@ -147,7 +173,7 @@ export function buildQuestion(player, league, difficulty) {
   const playedIds = new Set(played.map((c) => c.id));
   const distractors = shuffle(league.clubs.filter((c) => !chosenIds.has(c.id) && !playedIds.has(c.id)));
 
-  const slots = Math.min(difficulty.options, league.clubs.length);
+  const slots = Math.min(optionCount, league.clubs.length);
   while (chosen.length < slots && distractors.length) chosen.push(distractors.pop());
 
   // If the league is tiny, top up with any remaining club so the grid stays full.
@@ -156,18 +182,48 @@ export function buildQuestion(player, league, difficulty) {
     while (chosen.length < slots && rest.length) chosen.push(rest.pop());
   }
 
-  const options = shuffle(chosen).map((club) => {
+  return describeOptions(player, shuffle(chosen), byId);
+}
+
+/** Turns a list of clubs into answer options for this player, in the order given. */
+function describeOptions(player, clubs, byId) {
+  const options = clubs.map((club) => {
     const entry = player.clubs.find((c) => c.id === club.id);
     return {
-      ...byId.get(club.id),
+      ...(byId.get(club.id) || club),
       points: entry ? scoreFor(entry, player) : 0,
       played: Boolean(entry),
       isMain: player.mainClubIds.includes(club.id),
       years: entry ? entry.years : null,
     };
   });
-
   return { player, options };
+}
+
+/**
+ * Picks the four clubs the arena puts in its corners: the ones the most players
+ * in this pool actually answer to, so a round keeps finding cards to ask about.
+ */
+export function pickCorners(pool, league, count = 4) {
+  const tally = new Map();
+  pool.forEach((player) => {
+    player.mainClubIds.forEach((id) => tally.set(id, (tally.get(id) || 0) + 1));
+  });
+
+  const ranked = league.clubs
+    .filter((club) => tally.has(club.id))
+    .sort((a, b) => tally.get(b.id) - tally.get(a.id));
+
+  // Take a random slice of the well-represented clubs so rounds are not identical
+  const strong = ranked.slice(0, Math.max(count, Math.ceil(ranked.length * 0.6)));
+  const corners = shuffle(strong).slice(0, count);
+
+  // Top up from anywhere if the league is small
+  if (corners.length < count) {
+    const rest = shuffle(league.clubs.filter((c) => !corners.some((x) => x.id === c.id)));
+    while (corners.length < count && rest.length) corners.push(rest.pop());
+  }
+  return corners;
 }
 
 /** Base points a club is worth for this player: 100 for his main club, less for the rest. */

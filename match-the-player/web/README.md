@@ -37,7 +37,34 @@ Or, in the Vercel dashboard: *Add New → Project*, pick the repo, set the
 
 ---
 
-## How the game works
+## Two ways to play
+
+### Original — the Pygame game, rule for rule
+
+The default. Cards are thrown upward and fall under gravity; you grab one and
+drag it into the corner of the club he played for the longest. Everything is
+taken from `main.py`:
+
+| | |
+|---|---|
+| Round | 60 seconds at every difficulty |
+| Lives | none |
+| Main club | 100 points, raw — no combo, no difficulty multiplier |
+| Other club he played for | its share of his career |
+| Wrong corner, or released nowhere | −50 |
+| Card falls off the bottom | −50 |
+| Score | allowed to go negative |
+| Corners | four clubs, fixed for the whole round |
+| Impossible | two cards in the air at once |
+
+The physics are the original numbers (`get_initial_velocity()` and gravity at
+60 fps on a 720-tall screen), re-expressed per second and relative to the arena
+height — so a card takes the same time to fall on a phone as it did on the
+desktop: about **1.5s on easy, 1.2s on hard, 1.4s on impossible**. Grab it
+before then; once you are holding it, the card stops and you can think as long
+as the clock allows. That is the original game.
+
+### Classic, Endless, Time Attack — the faster tap version
 
 A footballer's card appears. Tap the club he spent the longest stretch of his
 career at.
@@ -55,19 +82,31 @@ career at.
 
 ### Difficulties
 
+In the tap modes:
+
 | | Player pool | Clubs shown | Lives | Clock | Clues | Score ×|
 |---|---|---|---|---|---|---|
 | **Easy** | famous players | 4 | 5 | 90s | nationality, position, current club | ×1 |
 | **Hard** | famous + deep cuts | 4 | 3 | 75s | position only | ×1.5 |
 | **Impossible** | journeymen & cult heroes | 6 | 2 | 60s | none, and the name is hidden | ×2 |
 
+In **Original** the difficulty changes the same things the Pygame version did —
+how high the card is thrown, its gravity, and how many are in the air — plus
+which players you are asked about. The clock is 60s and the scoring is raw at
+every level, and the name is always on the card.
+
 ### Modes
 
-`Classic` (clock + lives), `Endless` (lives only) and `Time Attack`
-(clock only, a miss costs 5 seconds) all work. `Daily Challenge`,
-`Career Journey` and `Club Challenge` are listed but greyed out — they're
-defined in `js/config.js` and just need `available: true` plus whatever extra
-rule they need in `js/engine.js`.
+`Original` (the Pygame rules, in the drag arena), `Classic` (clock + lives),
+`Endless` (lives only) and `Time Attack` (clock only, a miss costs 5 seconds)
+all work. `Daily Challenge`, `Career Journey` and `Club Challenge` are listed
+but greyed out — they're defined in `js/config.js` and just need
+`available: true` plus whatever extra rule they need in `js/engine.js`.
+
+Every rule that differs between modes lives in `js/config.js`: `useLives`,
+`useTimer`, `useCombo`, `clampScore`, `seconds`, `scoreMultiplier`, `showName`,
+`options`, and `arena` (which picks the falling-card screen over the tap grid).
+Nothing in the engine hard-codes a mode.
 
 ---
 
@@ -79,10 +118,12 @@ web/
 ├── css/
 │   ├── base.css                design tokens, reset, buttons, panels
 │   ├── screens.css             home / league / difficulty / game over / records
-│   └── game.css                HUD, player card, club grid, answer animations
+│   ├── game.css                HUD, player card, club grid, answer animations
+│   └── arena.css               Original mode: corners, falling card, points burst
 ├── js/
 │   ├── main.js                 boot + navigation + menus
-│   ├── game.js                 the game screen controller
+│   ├── game.js                 the tap screen controller
+│   ├── arena.js                the Original mode falling-card arena
 │   ├── engine.js               the rules (pure state, no DOM)
 │   ├── data.js                 loading, filtering, question building
 │   ├── components.js           player card / club badge renderers
@@ -155,6 +196,8 @@ right to use.
 
 ## What came across from the Python version
 
+* **The whole of it, in Original mode** — the drag, the falling cards, the four
+  corners, the 60-second round, the raw scoring and both −50 penalties.
 * **The core idea and the scoring rule** — match a player to the club he played
   for the longest, with partial credit for his other clubs.
 * **The Israeli league data.** All 178 players from `character_color_map` in the
@@ -165,10 +208,9 @@ right to use.
   yellow = Beitar Jerusalem.
 * **Difficulty levels, high scores, the mute toggle, the rules screen.**
 
-Deliberately left behind: the 1280×720 fixed canvas, the drag-a-bouncing-ball
-input (a pain on a phone), the hard-coded Hebrew virtual keyboard, the GitHub
-Gist high-score board (it needed a personal access token in the source), and the
-27 MB tutorial video.
+Deliberately left behind: the 1280×720 fixed canvas, the hard-coded Hebrew
+virtual keyboard, the GitHub Gist high-score board (it needed a personal access
+token in the source), and the 27 MB tutorial video.
 
 ---
 
@@ -184,14 +226,19 @@ Gist high-score board (it needed a personal access token in the source), and the
 ## Tests
 
 ```bash
-npm test                      # 27 checks: the rules, the scoring, and the player data
+npm test                      # 37 checks: the rules, the scoring, and the player data
 ```
 
-`tests/engine.test.mjs` has no dependencies — it runs the real engine against the
+`tests/engine.test.mjs` includes a block that pins the Original rules — 60
+seconds, no lives, no combo, raw points, a negative score, both −50 penalties,
+and corners that stay put — so a future tweak cannot quietly drift away from the
+Pygame behaviour. It has no dependencies — it runs the real engine against the
 real JSON, so a typo in a player file (an answer that isn't a club in that league,
 a duplicate id, an empty difficulty pool) fails the run.
 
-`tests/browser.test.mjs` walks the whole game in a real browser — every screen,
+`tests/arena.test.mjs` plays a full Original round in a browser: it drags cards
+into the right and wrong corners, lets one fall, and checks every number against
+the rules above. `tests/browser.test.mjs` walks the tap modes in a real browser — every screen,
 a scored round, a wrong answer, game over, localStorage, the sound toggle and
 three viewport sizes. It needs Playwright's Chromium; see the header of the file.
 

@@ -6,6 +6,7 @@
 import { DIFFICULTIES, MODES, getDifficulty, getMode } from './config.js';
 import { loadLeagues, loadClubLogos, loadPlayers, getLeague, poolFor } from './data.js';
 import { initGame, startGame, stopGame } from './game.js';
+import { initArena, startArena, stopArena } from './arena.js';
 import { escapeHtml, dirFor } from './components.js';
 import { store } from './storage.js';
 import { sfx, setMuted, isMuted, setMusic, unlock } from './audio.js';
@@ -58,6 +59,16 @@ async function boot() {
     progress: $('#hud-progress'),
   }, logoSet, showGameOver);
 
+  initArena({
+    arena: $('#arena'),
+    cards: $('#arena-cards'),
+    feedback: $('#arena-feedback'),
+    score: $('#arena-score'),
+    bar: $('#arena-bar'),
+    clock: $('#arena-clock'),
+    streak: $('#arena-cards-count'),
+  }, logoSet, showGameOver);
+
   setMuted(store.get('muted'));
   renderSoundToggle();
   renderHome();
@@ -82,6 +93,7 @@ function showFatal(error) {
 function display(name) {
   Object.entries(screens).forEach(([key, node]) => { node.hidden = key !== name; });
   if (name !== 'game') stopGame();
+  if (name !== 'arena') stopArena();
   applyAccent(name);
   window.scrollTo(0, 0);
 }
@@ -113,7 +125,7 @@ function goHome() {
 /** Tints the whole UI with the selected league's colour. */
 function applyAccent(screenName) {
   const league = getLeague(leagues, selection.league);
-  const useLeagueColour = ['difficulty', 'game', 'gameover'].includes(screenName) && league;
+  const useLeagueColour = ['difficulty', 'game', 'arena', 'gameover'].includes(screenName) && league;
   const root = document.documentElement.style;
   root.setProperty('--accent', useLeagueColour ? league.accent : '#00ff9d');
   root.setProperty('--accent-2', useLeagueColour ? (league.accent2 || '#3d7bff') : '#3d7bff');
@@ -163,6 +175,7 @@ async function renderDifficulty() {
     if (firstPlayable) selection.difficulty = firstPlayable.id;
   }
 
+  const mode = getMode(selection.mode);
   $('#difficulty-list').innerHTML = DIFFICULTIES.map((d) => `
     <button class="diff-card ${d.id === selection.difficulty ? 'is-selected' : ''}"
             type="button" data-difficulty="${d.id}" style="--diff:${d.color}"
@@ -170,7 +183,7 @@ async function renderDifficulty() {
       <span class="diff-card__dot"></span>
       <span class="diff-card__body">
         <span class="diff-card__name">${d.name}</span>
-        <span class="diff-card__desc">${escapeHtml(d.desc)}</span>
+        <span class="diff-card__desc">${escapeHtml(mode.arena ? d.arenaDesc : d.desc)}</span>
       </span>
       <span class="diff-card__count">${poolCounts[d.id] || 0}</span>
     </button>`).join('');
@@ -214,6 +227,7 @@ function showGameOver(result) {
   $('#over-best').hidden = !result.isBest;
   $('#over-context').textContent =
     `${result.league.name} · ${result.difficulty.name} · ${result.mode.name}`
+    + (result.dropped ? ` · ${result.dropped} dropped` : '')
     + (result.isBest ? '' : ` · best ${store.getBest(result.league.id, result.difficulty.id, result.mode.id)}`);
   show('gameover');
 }
@@ -229,8 +243,14 @@ async function play() {
 
   try {
     const players = await loadPlayers(league.id);
-    show('game');
-    startGame({ league, difficulty, mode, players });
+    // Original mode is played in the falling-card arena; everything else is tap-to-answer.
+    if (mode.arena) {
+      show('arena');
+      startArena({ league, difficulty, mode, players });
+    } else {
+      show('game');
+      startGame({ league, difficulty, mode, players });
+    }
   } catch (error) {
     showFatal(error);
   }
@@ -296,6 +316,7 @@ function wireGlobalClicks() {
         break;
       case 'quit':
         stopGame();
+        stopArena();
         goHome();
         break;
       case 'back':

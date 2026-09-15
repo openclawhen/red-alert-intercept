@@ -3,6 +3,10 @@
 A web rebuild of the Pygame game at
 [HenAsayag/Match_The_Player](https://github.com/HenAsayag/Match_The_Player).
 
+The default mode, **Original**, is the Pygame game rule for rule: falling cards,
+four corners, drag to place, 60 seconds, no lives, raw scoring. Classic, Endless
+and Time Attack are the faster tap version.
+
 * **`web/`** — the browser game. Plain HTML/CSS/JS, no build step, no
   dependencies, ready to deploy to Vercel. Start here: [`web/README.md`](web/README.md).
 * **`MIGRATION.md`** — what the original was, what was kept, what was rebuilt,
@@ -20,7 +24,7 @@ python3 -m http.server 8000
 
 ```bash
 cd web
-npm test        # 27 checks over the rules and the player data
+npm test        # 37 checks over the rules and the player data
 ```
 
 ## Moving this into the original repo
