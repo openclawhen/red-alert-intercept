@@ -3,7 +3,7 @@
  "note": "Migrated automatically from the original Pygame main.py (character_color_map). 'weight' is the original career-share score the old game awarded for that club.",
  "players": [
   {
-   "id": "il-001-אאוג-ן_טריקה",
+   "id": "il-001",
    "name": "אאוג'ן טריקה",
    "image": "",
    "nationality": "ישראל",
@@ -20,9 +20,9 @@
    ]
   },
   {
-   "id": "il-002-אבי_בנימין_-כדורגלן",
+   "id": "il-002",
    "name": "אבי בנימין",
-   "image": "assets/players/israeli-premier-league/il-002-אבי_בנימין_-כדורגלן.webp",
+   "image": "assets/players/israeli-premier-league/il-002.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -37,9 +37,9 @@
    ]
   },
   {
-   "id": "il-003-אבישי_כהן_-כדורגלן",
+   "id": "il-003",
    "name": "אבישי כהן",
-   "image": "assets/players/israeli-premier-league/il-003-אבישי_כהן_-כדורגלן.webp",
+   "image": "assets/players/israeli-premier-league/il-003.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -59,9 +59,9 @@
    ]
   },
   {
-   "id": "il-004-אברהם_בית_הלוי",
+   "id": "il-004",
    "name": "אברהם בית הלוי",
-   "image": "assets/players/israeli-premier-league/il-004-אברהם_בית_הלוי.webp",
+   "image": "assets/players/israeli-premier-league/il-004.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -81,9 +81,9 @@
    ]
   },
   {
-   "id": "il-005-אדוארדו_גררו",
+   "id": "il-005",
    "name": "אדוארדו גררו",
-   "image": "assets/players/israeli-premier-league/il-005-אדוארדו_גררו.webp",
+   "image": "assets/players/israeli-premier-league/il-005.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -98,9 +98,9 @@
    ]
   },
   {
-   "id": "il-006-אדווין_גיאסי",
+   "id": "il-006",
    "name": "אדווין גיאסי",
-   "image": "assets/players/israeli-premier-league/il-006-אדווין_גיאסי.webp",
+   "image": "assets/players/israeli-premier-league/il-006.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -115,9 +115,9 @@
    ]
   },
   {
-   "id": "il-007-אדי_גוטליב",
+   "id": "il-007",
    "name": "אדי גוטליב",
-   "image": "assets/players/israeli-premier-league/il-007-אדי_גוטליב.webp",
+   "image": "assets/players/israeli-premier-league/il-007.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -137,9 +137,9 @@
    ]
   },
   {
-   "id": "il-008-אהרן_אמר",
+   "id": "il-008",
    "name": "אהרן אמר",
-   "image": "assets/players/israeli-premier-league/il-008-אהרן_אמר.webp",
+   "image": "assets/players/israeli-premier-league/il-008.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -154,9 +154,9 @@
    ]
   },
   {
-   "id": "il-009-אובונג_מוזס_אקפאי",
+   "id": "il-009",
    "name": "אובונג מוזס אקפאי",
-   "image": "assets/players/israeli-premier-league/il-009-אובונג_מוזס_אקפאי.webp",
+   "image": "assets/players/israeli-premier-league/il-009.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -171,9 +171,9 @@
    ]
   },
   {
-   "id": "il-010-אוסקר_גלוך",
+   "id": "il-010",
    "name": "אוסקר גלוך",
-   "image": "assets/players/israeli-premier-league/il-010-אוסקר_גלוך.webp",
+   "image": "assets/players/israeli-premier-league/il-010.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -188,9 +188,9 @@
    ]
   },
   {
-   "id": "il-011-אופק_ביטון",
+   "id": "il-011",
    "name": "אופק ביטון",
-   "image": "assets/players/israeli-premier-league/il-011-אופק_ביטון.webp",
+   "image": "assets/players/israeli-premier-league/il-011.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -205,9 +205,9 @@
    ]
   },
   {
-   "id": "il-012-אור_אינברום",
+   "id": "il-012",
    "name": "אור אינברום",
-   "image": "assets/players/israeli-premier-league/il-012-אור_אינברום.webp",
+   "image": "assets/players/israeli-premier-league/il-012.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -227,9 +227,9 @@
    ]
   },
   {
-   "id": "il-013-אורי_אוזן",
+   "id": "il-013",
    "name": "אורי אוזן",
-   "image": "assets/players/israeli-premier-league/il-013-אורי_אוזן.webp",
+   "image": "assets/players/israeli-premier-league/il-013.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -259,9 +259,9 @@
    ]
   },
   {
-   "id": "il-014-אושר_דוידה",
+   "id": "il-014",
    "name": "אושר דוידה",
-   "image": "assets/players/israeli-premier-league/il-014-אושר_דוידה.webp",
+   "image": "assets/players/israeli-premier-league/il-014.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -281,9 +281,9 @@
    ]
   },
   {
-   "id": "il-015-אושרי_גיטא",
+   "id": "il-015",
    "name": "אושרי גיטא",
-   "image": "assets/players/israeli-premier-league/il-015-אושרי_גיטא.webp",
+   "image": "assets/players/israeli-premier-league/il-015.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -298,9 +298,9 @@
    ]
   },
   {
-   "id": "il-016-איאד_אבו_עביד",
+   "id": "il-016",
    "name": "איאד אבו עביד",
-   "image": "assets/players/israeli-premier-league/il-016-איאד_אבו_עביד.webp",
+   "image": "assets/players/israeli-premier-league/il-016.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -320,9 +320,9 @@
    ]
   },
   {
-   "id": "il-017-איבזיטו_אוגבונה",
+   "id": "il-017",
    "name": "איבזיטו אוגבונה",
-   "image": "assets/players/israeli-premier-league/il-017-איבזיטו_אוגבונה.webp",
+   "image": "assets/players/israeli-premier-league/il-017.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -337,9 +337,9 @@
    ]
   },
   {
-   "id": "il-018-איברהים_באנגורה",
+   "id": "il-018",
    "name": "איברהים באנגורה",
-   "image": "assets/players/israeli-premier-league/il-018-איברהים_באנגורה.webp",
+   "image": "assets/players/israeli-premier-league/il-018.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -354,9 +354,9 @@
    ]
   },
   {
-   "id": "il-019-איוואן_גצקו",
+   "id": "il-019",
    "name": "איוואן גצקו",
-   "image": "assets/players/israeli-premier-league/il-019-איוואן_גצקו.webp",
+   "image": "assets/players/israeli-premier-league/il-019.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -371,9 +371,9 @@
    ]
   },
   {
-   "id": "il-020-אייל_ברקוביץ",
+   "id": "il-020",
    "name": "אייל ברקוביץ'",
-   "image": "assets/players/israeli-premier-league/il-020-אייל_ברקוביץ.webp",
+   "image": "assets/players/israeli-premier-league/il-020.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -393,9 +393,9 @@
    ]
   },
   {
-   "id": "il-021-אייל_גולסה",
+   "id": "il-021",
    "name": "אייל גולסה",
-   "image": "assets/players/israeli-premier-league/il-021-אייל_גולסה.webp",
+   "image": "assets/players/israeli-premier-league/il-021.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -415,9 +415,9 @@
    ]
   },
   {
-   "id": "il-022-איציק_כהן_-בלם",
+   "id": "il-022",
    "name": "איציק כהן",
-   "image": "assets/players/israeli-premier-league/il-022-איציק_כהן_-בלם.webp",
+   "image": "assets/players/israeli-premier-league/il-022.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -432,9 +432,9 @@
    ]
   },
   {
-   "id": "il-023-איתן_טיבי",
+   "id": "il-023",
    "name": "איתן טיבי",
-   "image": "assets/players/israeli-premier-league/il-023-איתן_טיבי.webp",
+   "image": "assets/players/israeli-premier-league/il-023.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -454,9 +454,9 @@
    ]
   },
   {
-   "id": "il-024-אלון_חרזי",
+   "id": "il-024",
    "name": "אלון חרזי",
-   "image": "assets/players/israeli-premier-league/il-024-אלון_חרזי.webp",
+   "image": "assets/players/israeli-premier-league/il-024.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -476,9 +476,9 @@
    ]
   },
   {
-   "id": "il-025-אלי_אוחנה",
+   "id": "il-025",
    "name": "אלי אוחנה",
-   "image": "assets/players/israeli-premier-league/il-025-אלי_אוחנה.webp",
+   "image": "assets/players/israeli-premier-league/il-025.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -493,9 +493,9 @@
    ]
   },
   {
-   "id": "il-026-אלי_דסה",
+   "id": "il-026",
    "name": "אלי דסה",
-   "image": "assets/players/israeli-premier-league/il-026-אלי_דסה.webp",
+   "image": "assets/players/israeli-premier-league/il-026.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -515,9 +515,9 @@
    ]
   },
   {
-   "id": "il-027-אלי_כהן_-מאמן",
+   "id": "il-027",
    "name": "אלי כהן",
-   "image": "assets/players/israeli-premier-league/il-027-אלי_כהן_-מאמן.webp",
+   "image": "assets/players/israeli-premier-league/il-027.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -537,9 +537,9 @@
    ]
   },
   {
-   "id": "il-028-אליניב_ברדה",
+   "id": "il-028",
    "name": "אליניב ברדה",
-   "image": "assets/players/israeli-premier-league/il-028-אליניב_ברדה.webp",
+   "image": "assets/players/israeli-premier-league/il-028.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -559,9 +559,9 @@
    ]
   },
   {
-   "id": "il-029-אליסון_דוס_סנטוס_-כדורגלן",
+   "id": "il-029",
    "name": "אליסון דוס סנטוס",
-   "image": "assets/players/israeli-premier-league/il-029-אליסון_דוס_סנטוס_-כדורגלן.webp",
+   "image": "assets/players/israeli-premier-league/il-029.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -576,9 +576,9 @@
    ]
   },
   {
-   "id": "il-030-אלירן_דנין",
+   "id": "il-030",
    "name": "אלירן דנין",
-   "image": "assets/players/israeli-premier-league/il-030-אלירן_דנין.webp",
+   "image": "assets/players/israeli-premier-league/il-030.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -603,9 +603,9 @@
    ]
   },
   {
-   "id": "il-031-אלירן_חודדה",
+   "id": "il-031",
    "name": "אלירן חודדה",
-   "image": "assets/players/israeli-premier-league/il-031-אלירן_חודדה.webp",
+   "image": "assets/players/israeli-premier-league/il-031.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -620,9 +620,9 @@
    ]
   },
   {
-   "id": "il-032-אלכסנדר_אובארוב",
+   "id": "il-032",
    "name": "אלכסנדר אובארוב",
-   "image": "assets/players/israeli-premier-league/il-032-אלכסנדר_אובארוב.webp",
+   "image": "assets/players/israeli-premier-league/il-032.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -637,9 +637,9 @@
    ]
   },
   {
-   "id": "il-033-אלכסנדר_בולייביץ",
+   "id": "il-033",
    "name": "אלכסנדר בולייביץ'",
-   "image": "assets/players/israeli-premier-league/il-033-אלכסנדר_בולייביץ.webp",
+   "image": "assets/players/israeli-premier-league/il-033.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -654,9 +654,9 @@
    ]
   },
   {
-   "id": "il-034-אלן_אוז-בולט",
+   "id": "il-034",
    "name": "אלן אוז'בולט",
-   "image": "assets/players/israeli-premier-league/il-034-אלן_אוז-בולט.webp",
+   "image": "assets/players/israeli-premier-league/il-034.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -671,9 +671,9 @@
    ]
   },
   {
-   "id": "il-035-אנדרס_טונייס",
+   "id": "il-035",
    "name": "אנדרס טונייס",
-   "image": "assets/players/israeli-premier-league/il-035-אנדרס_טונייס.webp",
+   "image": "assets/players/israeli-premier-league/il-035.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -688,9 +688,9 @@
    ]
   },
   {
-   "id": "il-036-אנתוני_אנאן",
+   "id": "il-036",
    "name": "אנתוני אנאן",
-   "image": "assets/players/israeli-premier-league/il-036-אנתוני_אנאן.webp",
+   "image": "assets/players/israeli-premier-league/il-036.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -705,9 +705,9 @@
    ]
   },
   {
-   "id": "il-037-אסי_דומב",
+   "id": "il-037",
    "name": "אסי דומב",
-   "image": "assets/players/israeli-premier-league/il-037-אסי_דומב.webp",
+   "image": "assets/players/israeli-premier-league/il-037.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -727,9 +727,9 @@
    ]
   },
   {
-   "id": "il-038-אפולה_אדל",
+   "id": "il-038",
    "name": "אפולה אדל",
-   "image": "assets/players/israeli-premier-league/il-038-אפולה_אדל.webp",
+   "image": "assets/players/israeli-premier-league/il-038.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -744,9 +744,9 @@
    ]
   },
   {
-   "id": "il-039-ארון_אולנארה",
+   "id": "il-039",
    "name": "ארון אולנארה",
-   "image": "assets/players/israeli-premier-league/il-039-ארון_אולנארה.webp",
+   "image": "assets/players/israeli-premier-league/il-039.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -761,9 +761,9 @@
    ]
   },
   {
-   "id": "il-040-אריק_בנדו",
+   "id": "il-040",
    "name": "אריק בנדו",
-   "image": "assets/players/israeli-premier-league/il-040-אריק_בנדו.webp",
+   "image": "assets/players/israeli-premier-league/il-040.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -783,9 +783,9 @@
    ]
   },
   {
-   "id": "il-041-בוני_גינצבורג",
+   "id": "il-041",
    "name": "בוני גינצבורג",
-   "image": "assets/players/israeli-premier-league/il-041-בוני_גינצבורג.webp",
+   "image": "assets/players/israeli-premier-league/il-041.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -810,9 +810,9 @@
    ]
   },
   {
-   "id": "il-042-בירם_כיאל",
+   "id": "il-042",
    "name": "בירם כיאל",
-   "image": "assets/players/israeli-premier-league/il-042-בירם_כיאל.webp",
+   "image": "assets/players/israeli-premier-league/il-042.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -827,9 +827,9 @@
    ]
   },
   {
-   "id": "il-043-בן_ביטון",
+   "id": "il-043",
    "name": "בן ביטון",
-   "image": "assets/players/israeli-premier-league/il-043-בן_ביטון.webp",
+   "image": "assets/players/israeli-premier-league/il-043.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -854,9 +854,9 @@
    ]
   },
   {
-   "id": "il-044-ברוך_דגו",
+   "id": "il-044",
    "name": "ברוך דגו",
-   "image": "assets/players/israeli-premier-league/il-044-ברוך_דגו.webp",
+   "image": "assets/players/israeli-premier-league/il-044.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -876,9 +876,9 @@
    ]
   },
   {
-   "id": "il-045-ברק_בדש",
+   "id": "il-045",
    "name": "ברק בדש",
-   "image": "assets/players/israeli-premier-league/il-045-ברק_בדש.webp",
+   "image": "assets/players/israeli-premier-league/il-045.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -898,9 +898,9 @@
    ]
   },
   {
-   "id": "il-046-ברק_יצחקי",
+   "id": "il-046",
    "name": "ברק יצחקי",
-   "image": "assets/players/israeli-premier-league/il-046-ברק_יצחקי.webp",
+   "image": "assets/players/israeli-premier-league/il-046.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -920,9 +920,9 @@
    ]
   },
   {
-   "id": "il-047-ברק_לוי",
+   "id": "il-047",
    "name": "ברק לוי",
-   "image": "assets/players/israeli-premier-league/il-047-ברק_לוי.webp",
+   "image": "assets/players/israeli-premier-league/il-047.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -937,9 +937,9 @@
    ]
   },
   {
-   "id": "il-048-ג-וניור_ויסה",
+   "id": "il-048",
    "name": "ג'וניור ויסה",
-   "image": "assets/players/israeli-premier-league/il-048-ג-וניור_ויסה.webp",
+   "image": "assets/players/israeli-premier-league/il-048.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -954,9 +954,9 @@
    ]
   },
   {
-   "id": "il-049-ג-ונתן_אסוס",
+   "id": "il-049",
    "name": "ג'ונתן אסוס",
-   "image": "assets/players/israeli-premier-league/il-049-ג-ונתן_אסוס.webp",
+   "image": "assets/players/israeli-premier-league/il-049.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -971,9 +971,9 @@
    ]
   },
   {
-   "id": "il-050-ג-ורג-ה_יובאנוביץ",
+   "id": "il-050",
    "name": "ג'ורג'ה יובאנוביץ'",
-   "image": "assets/players/israeli-premier-league/il-050-ג-ורג-ה_יובאנוביץ.webp",
+   "image": "assets/players/israeli-premier-league/il-050.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -988,9 +988,9 @@
    ]
   },
   {
-   "id": "il-051-גדי_ברומר",
+   "id": "il-051",
    "name": "גדי ברומר",
-   "image": "assets/players/israeli-premier-league/il-051-גדי_ברומר.webp",
+   "image": "assets/players/israeli-premier-league/il-051.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1005,9 +1005,9 @@
    ]
   },
   {
-   "id": "il-052-גודסוויי_דוניו",
+   "id": "il-052",
    "name": "גודסוויי דוניו",
-   "image": "assets/players/israeli-premier-league/il-052-גודסוויי_דוניו.webp",
+   "image": "assets/players/israeli-premier-league/il-052.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1022,9 +1022,9 @@
    ]
   },
   {
-   "id": "il-053-גיא_אסולין",
+   "id": "il-053",
    "name": "גיא אסולין",
-   "image": "assets/players/israeli-premier-league/il-053-גיא_אסולין.webp",
+   "image": "assets/players/israeli-premier-league/il-053.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1039,9 +1039,9 @@
    ]
   },
   {
-   "id": "il-054-גיא_בדש",
+   "id": "il-054",
    "name": "גיא בדש",
-   "image": "assets/players/israeli-premier-league/il-054-גיא_בדש.webp",
+   "image": "assets/players/israeli-premier-league/il-054.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1056,9 +1056,9 @@
    ]
   },
   {
-   "id": "il-055-גיא_חיימוב",
+   "id": "il-055",
    "name": "גיא חיימוב",
-   "image": "assets/players/israeli-premier-league/il-055-גיא_חיימוב.webp",
+   "image": "assets/players/israeli-premier-league/il-055.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1078,9 +1078,9 @@
    ]
   },
   {
-   "id": "il-056-גיורא_אנטמן",
+   "id": "il-056",
    "name": "גיורא אנטמן",
-   "image": "assets/players/israeli-premier-league/il-056-גיורא_אנטמן.webp",
+   "image": "assets/players/israeli-premier-league/il-056.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1105,9 +1105,9 @@
    ]
   },
   {
-   "id": "il-057-גיל_יצחק",
+   "id": "il-057",
    "name": "גיל יצחק",
-   "image": "assets/players/israeli-premier-league/il-057-גיל_יצחק.webp",
+   "image": "assets/players/israeli-premier-league/il-057.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1127,9 +1127,9 @@
    ]
   },
   {
-   "id": "il-058-גילי_ורמוט",
+   "id": "il-058",
    "name": "גילי ורמוט",
-   "image": "assets/players/israeli-premier-league/il-058-גילי_ורמוט.webp",
+   "image": "assets/players/israeli-premier-league/il-058.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1154,9 +1154,9 @@
    ]
   },
   {
-   "id": "il-059-גל_אלברמן",
+   "id": "il-059",
    "name": "גל אלברמן",
-   "image": "assets/players/israeli-premier-league/il-059-גל_אלברמן.webp",
+   "image": "assets/players/israeli-premier-league/il-059.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1181,9 +1181,9 @@
    ]
   },
   {
-   "id": "il-060-דאגלס_דה_סילבה",
+   "id": "il-060",
    "name": "דאגלס דה סילבה",
-   "image": "assets/players/israeli-premier-league/il-060-דאגלס_דה_סילבה.webp",
+   "image": "assets/players/israeli-premier-league/il-060.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1198,9 +1198,9 @@
    ]
   },
   {
-   "id": "il-061-דדי_בן_דיין",
+   "id": "il-061",
    "name": "דדי בן דיין",
-   "image": "assets/players/israeli-premier-league/il-061-דדי_בן_דיין.webp",
+   "image": "assets/players/israeli-premier-league/il-061.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1220,9 +1220,9 @@
    ]
   },
   {
-   "id": "il-062-דוד_אמסלם_-כדורגלן",
+   "id": "il-062",
    "name": "דוד אמסלם",
-   "image": "assets/players/israeli-premier-league/il-062-דוד_אמסלם_-כדורגלן.webp",
+   "image": "assets/players/israeli-premier-league/il-062.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1242,9 +1242,9 @@
    ]
   },
   {
-   "id": "il-063-אברהם_גרנט",
+   "id": "il-063",
    "name": "אברהם גרנט",
-   "image": "assets/players/israeli-premier-league/il-063-אברהם_גרנט.webp",
+   "image": "assets/players/israeli-premier-league/il-063.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1259,9 +1259,9 @@
    ]
   },
   {
-   "id": "il-064-דודו_אוואט",
+   "id": "il-064",
    "name": "דודו אוואט",
-   "image": "assets/players/israeli-premier-league/il-064-דודו_אוואט.webp",
+   "image": "assets/players/israeli-premier-league/il-064.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1276,9 +1276,9 @@
    ]
   },
   {
-   "id": "il-065-דודו_ביטון",
+   "id": "il-065",
    "name": "דודו ביטון",
-   "image": "assets/players/israeli-premier-league/il-065-דודו_ביטון.webp",
+   "image": "assets/players/israeli-premier-league/il-065.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1303,9 +1303,9 @@
    ]
   },
   {
-   "id": "il-066-דודו_דהאן",
+   "id": "il-066",
    "name": "דודו דהאן",
-   "image": "assets/players/israeli-premier-league/il-066-דודו_דהאן.webp",
+   "image": "assets/players/israeli-premier-league/il-066.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1320,9 +1320,9 @@
    ]
   },
   {
-   "id": "il-067-דור_אלו",
+   "id": "il-067",
    "name": "דור אלו",
-   "image": "assets/players/israeli-premier-league/il-067-דור_אלו.webp",
+   "image": "assets/players/israeli-premier-league/il-067.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1337,9 +1337,9 @@
    ]
   },
   {
-   "id": "il-068-דור_חוגי",
+   "id": "il-068",
    "name": "דור חוגי",
-   "image": "assets/players/israeli-premier-league/il-068-דור_חוגי.webp",
+   "image": "assets/players/israeli-premier-league/il-068.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1359,9 +1359,9 @@
    ]
   },
   {
-   "id": "il-069-דור_כוכב",
+   "id": "il-069",
    "name": "דור כוכב",
-   "image": "assets/players/israeli-premier-league/il-069-דור_כוכב.webp",
+   "image": "assets/players/israeli-premier-league/il-069.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1376,9 +1376,9 @@
    ]
   },
   {
-   "id": "il-070-דיוגו_ורדשקה",
+   "id": "il-070",
    "name": "דיוגו ורדשקה",
-   "image": "assets/players/israeli-premier-league/il-070-דיוגו_ורדשקה.webp",
+   "image": "assets/players/israeli-premier-league/il-070.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1393,9 +1393,9 @@
    ]
   },
   {
-   "id": "il-071-דינו_אנדלובו",
+   "id": "il-071",
    "name": "דינו אנדלובו",
-   "image": "assets/players/israeli-premier-league/il-071-דינו_אנדלובו.webp",
+   "image": "assets/players/israeli-premier-league/il-071.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1410,9 +1410,9 @@
    ]
   },
   {
-   "id": "il-072-דן_איינבינדר",
+   "id": "il-072",
    "name": "דן איינבינדר",
-   "image": "assets/players/israeli-premier-league/il-072-דן_איינבינדר.webp",
+   "image": "assets/players/israeli-premier-league/il-072.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1437,9 +1437,9 @@
    ]
   },
   {
-   "id": "il-073-דניאל_פרץ",
+   "id": "il-073",
    "name": "דניאל פרץ",
-   "image": "assets/players/israeli-premier-league/il-073-דניאל_פרץ.webp",
+   "image": "assets/players/israeli-premier-league/il-073.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1454,9 +1454,9 @@
    ]
   },
   {
-   "id": "il-074-דן_ביטון_-כדורגלן",
+   "id": "il-074",
    "name": "דן ביטון",
-   "image": "assets/players/israeli-premier-league/il-074-דן_ביטון_-כדורגלן.webp",
+   "image": "assets/players/israeli-premier-league/il-074.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1471,9 +1471,9 @@
    ]
   },
   {
-   "id": "il-075-דני_איימוס",
+   "id": "il-075",
    "name": "דני איימוס",
-   "image": "assets/players/israeli-premier-league/il-075-דני_איימוס.webp",
+   "image": "assets/players/israeli-premier-league/il-075.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1488,9 +1488,9 @@
    ]
   },
   {
-   "id": "il-076-דני_הוצ-קו",
+   "id": "il-076",
    "name": "דני הוצ'קו",
-   "image": "assets/players/israeli-premier-league/il-076-דני_הוצ-קו.webp",
+   "image": "assets/players/israeli-premier-league/il-076.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1505,9 +1505,9 @@
    ]
   },
   {
-   "id": "il-077-דניאל_בריילובסקי",
+   "id": "il-077",
    "name": "דניאל בריילובסקי",
-   "image": "assets/players/israeli-premier-league/il-077-דניאל_בריילובסקי.webp",
+   "image": "assets/players/israeli-premier-league/il-077.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1522,9 +1522,9 @@
    ]
   },
   {
-   "id": "il-078-דניאל_דה_רידר",
+   "id": "il-078",
    "name": "דניאל דה רידר",
-   "image": "assets/players/israeli-premier-league/il-078-דניאל_דה_רידר.webp",
+   "image": "assets/players/israeli-premier-league/il-078.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1539,9 +1539,9 @@
    ]
   },
   {
-   "id": "il-079-דניאל_הבר",
+   "id": "il-079",
    "name": "דניאל הבר",
-   "image": "assets/players/israeli-premier-league/il-079-דניאל_הבר.webp",
+   "image": "assets/players/israeli-premier-league/il-079.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1556,9 +1556,9 @@
    ]
   },
   {
-   "id": "il-080-דניאל_פרץ_-2000",
+   "id": "il-080",
    "name": "דניאל פרץ",
-   "image": "assets/players/israeli-premier-league/il-080-דניאל_פרץ_-2000.webp",
+   "image": "assets/players/israeli-premier-league/il-080.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1573,9 +1573,9 @@
    ]
   },
   {
-   "id": "il-081-דניל_לסובוי",
+   "id": "il-081",
    "name": "דניל לסובוי",
-   "image": "assets/players/israeli-premier-league/il-081-דניל_לסובוי.webp",
+   "image": "assets/players/israeli-premier-league/il-081.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1590,9 +1590,9 @@
    ]
   },
   {
-   "id": "il-082-דנילו_אספרייה",
+   "id": "il-082",
    "name": "דנילו אספרייה",
-   "image": "assets/players/israeli-premier-league/il-082-דנילו_אספרייה.webp",
+   "image": "assets/players/israeli-premier-league/il-082.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1607,9 +1607,9 @@
    ]
   },
   {
-   "id": "il-083-דרק_בואטנג",
+   "id": "il-083",
    "name": "דרק בואטנג",
-   "image": "assets/players/israeli-premier-league/il-083-דרק_בואטנג.webp",
+   "image": "assets/players/israeli-premier-league/il-083.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1624,9 +1624,9 @@
    ]
   },
   {
-   "id": "il-084-וינסנט_אניימה",
+   "id": "il-084",
    "name": "וינסנט אניימה",
-   "image": "assets/players/israeli-premier-league/il-084-וינסנט_אניימה.webp",
+   "image": "assets/players/israeli-premier-league/il-084.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1646,9 +1646,9 @@
    ]
   },
   {
-   "id": "il-085-ז-והאן_אודל",
+   "id": "il-085",
    "name": "ז'והאן אודל",
-   "image": "assets/players/israeli-premier-league/il-085-ז-והאן_אודל.webp",
+   "image": "assets/players/israeli-premier-league/il-085.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1663,9 +1663,9 @@
    ]
   },
   {
-   "id": "il-086-ז-ורז-יניו_-1991",
+   "id": "il-086",
    "name": "ז'ורז'יניו",
-   "image": "assets/players/israeli-premier-league/il-086-ז-ורז-יניו_-1991.webp",
+   "image": "assets/players/israeli-premier-league/il-086.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1680,9 +1680,9 @@
    ]
   },
   {
-   "id": "il-087-זאב_חיימוביץ",
+   "id": "il-087",
    "name": "זאב חיימוביץ'",
-   "image": "assets/players/israeli-premier-league/il-087-זאב_חיימוביץ.webp",
+   "image": "assets/players/israeli-premier-league/il-087.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1702,7 +1702,7 @@
    ]
   },
   {
-   "id": "il-088-חיים_מגרלשוילי",
+   "id": "il-088",
    "name": "חיים מגרלשוילי",
    "image": "",
    "nationality": "ישראל",
@@ -1729,9 +1729,9 @@
    ]
   },
   {
-   "id": "il-089-חסן_אבו_זייד",
+   "id": "il-089",
    "name": "חסן אבו זייד",
-   "image": "assets/players/israeli-premier-league/il-089-חסן_אבו_זייד.webp",
+   "image": "assets/players/israeli-premier-league/il-089.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1751,9 +1751,9 @@
    ]
   },
   {
-   "id": "il-090-חסן_בדג-ייב",
+   "id": "il-090",
    "name": "חסן בדג'ייב",
-   "image": "assets/players/israeli-premier-league/il-090-חסן_בדג-ייב.webp",
+   "image": "assets/players/israeli-premier-league/il-090.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1768,9 +1768,9 @@
    ]
   },
   {
-   "id": "il-091-טל_בן-חיים_-1982",
+   "id": "il-091",
    "name": "טל בן-חיים",
-   "image": "assets/players/israeli-premier-league/il-091-טל_בן-חיים_-1982.webp",
+   "image": "assets/players/israeli-premier-league/il-091.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1790,9 +1790,9 @@
    ]
   },
   {
-   "id": "il-092-טל_בן-חיים_-1989",
+   "id": "il-092",
    "name": "טל בן-חיים",
-   "image": "assets/players/israeli-premier-league/il-092-טל_בן-חיים_-1989.webp",
+   "image": "assets/players/israeli-premier-league/il-092.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1812,9 +1812,9 @@
    ]
   },
   {
-   "id": "il-093-יואב_ג-ראפי",
+   "id": "il-093",
    "name": "יואב ג'ראפי",
-   "image": "assets/players/israeli-premier-league/il-093-יואב_ג-ראפי.webp",
+   "image": "assets/players/israeli-premier-league/il-093.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1829,9 +1829,9 @@
    ]
   },
   {
-   "id": "il-094-יואב_זיו",
+   "id": "il-094",
    "name": "יואב זיו",
-   "image": "assets/players/israeli-premier-league/il-094-יואב_זיו.webp",
+   "image": "assets/players/israeli-premier-league/il-094.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1856,9 +1856,9 @@
    ]
   },
   {
-   "id": "il-095-יוחנן_וולך",
+   "id": "il-095",
    "name": "יוחנן וולך",
-   "image": "assets/players/israeli-premier-league/il-095-יוחנן_וולך.webp",
+   "image": "assets/players/israeli-premier-league/il-095.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1873,9 +1873,9 @@
    ]
   },
   {
-   "id": "il-096-יונתן_כהן",
+   "id": "il-096",
    "name": "יונתן כהן",
-   "image": "assets/players/israeli-premier-league/il-096-יונתן_כהן.webp",
+   "image": "assets/players/israeli-premier-league/il-096.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1890,9 +1890,9 @@
    ]
   },
   {
-   "id": "il-097-יוסי_אבוקסיס",
+   "id": "il-097",
    "name": "יוסי אבוקסיס",
-   "image": "assets/players/israeli-premier-league/il-097-יוסי_אבוקסיס.webp",
+   "image": "assets/players/israeli-premier-league/il-097.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1912,9 +1912,9 @@
    ]
   },
   {
-   "id": "il-098-יוריס_ואן_אובריים",
+   "id": "il-098",
    "name": "יוריס ואן אובריים",
-   "image": "assets/players/israeli-premier-league/il-098-יוריס_ואן_אובריים.webp",
+   "image": "assets/players/israeli-premier-league/il-098.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1929,9 +1929,9 @@
    ]
   },
   {
-   "id": "il-099-יניב_בריק",
+   "id": "il-099",
    "name": "יניב בריק",
-   "image": "assets/players/israeli-premier-league/il-099-יניב_בריק.webp",
+   "image": "assets/players/israeli-premier-league/il-099.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1946,9 +1946,9 @@
    ]
   },
   {
-   "id": "il-100-יעקב_אסייג",
+   "id": "il-100",
    "name": "יעקב אסייג",
-   "image": "assets/players/israeli-premier-league/il-100-יעקב_אסייג.webp",
+   "image": "assets/players/israeli-premier-league/il-100.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1963,9 +1963,9 @@
    ]
   },
   {
-   "id": "il-101-ירו_בלו",
+   "id": "il-101",
    "name": "ירו בלו",
-   "image": "assets/players/israeli-premier-league/il-101-ירו_בלו.webp",
+   "image": "assets/players/israeli-premier-league/il-101.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1980,9 +1980,9 @@
    ]
   },
   {
-   "id": "il-102-ירוסלב_באקו",
+   "id": "il-102",
    "name": "ירוסלב באקו",
-   "image": "assets/players/israeli-premier-league/il-102-ירוסלב_באקו.webp",
+   "image": "assets/players/israeli-premier-league/il-102.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -1997,9 +1997,9 @@
    ]
   },
   {
-   "id": "il-103-כפיר_אדרי",
+   "id": "il-103",
    "name": "כפיר אדרי",
-   "image": "assets/players/israeli-premier-league/il-103-כפיר_אדרי.webp",
+   "image": "assets/players/israeli-premier-league/il-103.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2024,9 +2024,9 @@
    ]
   },
   {
-   "id": "il-104-כפיר_אודי",
+   "id": "il-104",
    "name": "כפיר אודי",
-   "image": "assets/players/israeli-premier-league/il-104-כפיר_אודי.webp",
+   "image": "assets/players/israeli-premier-league/il-104.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2041,9 +2041,9 @@
    ]
   },
   {
-   "id": "il-105-כריסטיאן_אלברס",
+   "id": "il-105",
    "name": "כריסטיאן אלברס",
-   "image": "assets/players/israeli-premier-league/il-105-כריסטיאן_אלברס.webp",
+   "image": "assets/players/israeli-premier-league/il-105.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2058,9 +2058,9 @@
    ]
   },
   {
-   "id": "il-106-לואיס_הרננדס_רודריגס",
+   "id": "il-106",
    "name": "לואיס הרננדס רודריגס",
-   "image": "assets/players/israeli-premier-league/il-106-לואיס_הרננדס_רודריגס.webp",
+   "image": "assets/players/israeli-premier-league/il-106.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2075,9 +2075,9 @@
    ]
   },
   {
-   "id": "il-107-ליאור_אסולין",
+   "id": "il-107",
    "name": "ליאור אסולין",
-   "image": "assets/players/israeli-premier-league/il-107-ליאור_אסולין.webp",
+   "image": "assets/players/israeli-premier-league/il-107.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2097,9 +2097,9 @@
    ]
   },
   {
-   "id": "il-108-ליביו_אנטל",
+   "id": "il-108",
    "name": "ליביו אנטל",
-   "image": "assets/players/israeli-premier-league/il-108-ליביו_אנטל.webp",
+   "image": "assets/players/israeli-premier-league/il-108.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2119,9 +2119,9 @@
    ]
   },
   {
-   "id": "il-109-ליוואי_גארסיה",
+   "id": "il-109",
    "name": "ליוואי גארסיה",
-   "image": "assets/players/israeli-premier-league/il-109-ליוואי_גארסיה.webp",
+   "image": "assets/players/israeli-premier-league/il-109.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2136,9 +2136,9 @@
    ]
   },
   {
-   "id": "il-110-מאור_בוזגלו",
+   "id": "il-110",
    "name": "מאור בוזגלו",
-   "image": "assets/players/israeli-premier-league/il-110-מאור_בוזגלו.webp",
+   "image": "assets/players/israeli-premier-league/il-110.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2168,9 +2168,9 @@
    ]
   },
   {
-   "id": "il-111-מארק_ואליינטה",
+   "id": "il-111",
    "name": "מארק ואליינטה",
-   "image": "assets/players/israeli-premier-league/il-111-מארק_ואליינטה.webp",
+   "image": "assets/players/israeli-premier-league/il-111.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2185,9 +2185,9 @@
    ]
   },
   {
-   "id": "il-112-מואנס_דבור",
+   "id": "il-112",
    "name": "מואנס דבור",
-   "image": "assets/players/israeli-premier-league/il-112-מואנס_דבור.webp",
+   "image": "assets/players/israeli-premier-league/il-112.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2202,9 +2202,9 @@
    ]
   },
   {
-   "id": "il-113-מוחמד_אבו_פאני",
+   "id": "il-113",
    "name": "מוחמד אבו פאני",
-   "image": "assets/players/israeli-premier-league/il-113-מוחמד_אבו_פאני.webp",
+   "image": "assets/players/israeli-premier-league/il-113.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2219,9 +2219,9 @@
    ]
   },
   {
-   "id": "il-114-מוחמד_גדיר",
+   "id": "il-114",
    "name": "מוחמד גדיר",
-   "image": "assets/players/israeli-premier-league/il-114-מוחמד_גדיר.webp",
+   "image": "assets/players/israeli-premier-league/il-114.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2236,9 +2236,9 @@
    ]
   },
   {
-   "id": "il-115-מוחמד_כליבאת",
+   "id": "il-115",
    "name": "מוחמד כליבאת",
-   "image": "assets/players/israeli-premier-league/il-115-מוחמד_כליבאת.webp",
+   "image": "assets/players/israeli-premier-league/il-115.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2253,9 +2253,9 @@
    ]
   },
   {
-   "id": "il-116-מוטי_איוניר",
+   "id": "il-116",
    "name": "מוטי איוניר",
-   "image": "assets/players/israeli-premier-league/il-116-מוטי_איוניר.webp",
+   "image": "assets/players/israeli-premier-league/il-116.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2275,9 +2275,9 @@
    ]
   },
   {
-   "id": "il-117-מוטי_ברשצקי",
+   "id": "il-117",
    "name": "מוטי ברשצקי",
-   "image": "assets/players/israeli-premier-league/il-117-מוטי_ברשצקי.webp",
+   "image": "assets/players/israeli-premier-league/il-117.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2292,9 +2292,9 @@
    ]
   },
   {
-   "id": "il-118-מיכאיל_אוסינוב",
+   "id": "il-118",
    "name": "מיכאיל אוסינוב",
-   "image": "assets/players/israeli-premier-league/il-118-מיכאיל_אוסינוב.webp",
+   "image": "assets/players/israeli-premier-league/il-118.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2309,9 +2309,9 @@
    ]
   },
   {
-   "id": "il-119-מיכאל_זנדברג",
+   "id": "il-119",
    "name": "מיכאל זנדברג",
-   "image": "assets/players/israeli-premier-league/il-119-מיכאל_זנדברג.webp",
+   "image": "assets/players/israeli-premier-league/il-119.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2336,9 +2336,9 @@
    ]
   },
   {
-   "id": "il-120-מיקאל_אלפונס",
+   "id": "il-120",
    "name": "מיקאל אלפונס",
-   "image": "assets/players/israeli-premier-league/il-120-מיקאל_אלפונס.webp",
+   "image": "assets/players/israeli-premier-league/il-120.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2353,9 +2353,9 @@
    ]
   },
   {
-   "id": "il-121-מיקו_בלו",
+   "id": "il-121",
    "name": "מיקו בלו",
-   "image": "assets/players/israeli-premier-league/il-121-מיקו_בלו.webp",
+   "image": "assets/players/israeli-premier-league/il-121.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2370,9 +2370,9 @@
    ]
   },
   {
-   "id": "il-122-מני_בסון",
+   "id": "il-122",
    "name": "מני בסון",
-   "image": "assets/players/israeli-premier-league/il-122-מני_בסון.webp",
+   "image": "assets/players/israeli-premier-league/il-122.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2387,9 +2387,9 @@
    ]
   },
   {
-   "id": "il-123-מקסים_גרצ-קין",
+   "id": "il-123",
    "name": "מקסים גרצ'קין",
-   "image": "assets/players/israeli-premier-league/il-123-מקסים_גרצ-קין.webp",
+   "image": "assets/players/israeli-premier-league/il-123.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2404,9 +2404,9 @@
    ]
   },
   {
-   "id": "il-124-מרלון_דה_חסוס",
+   "id": "il-124",
    "name": "מרלון דה חסוס",
-   "image": "assets/players/israeli-premier-league/il-124-מרלון_דה_חסוס.webp",
+   "image": "assets/players/israeli-premier-league/il-124.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2421,9 +2421,9 @@
    ]
   },
   {
-   "id": "il-125-מרקו_יאנקוביץ",
+   "id": "il-125",
    "name": "מרקו יאנקוביץ'",
-   "image": "assets/players/israeli-premier-league/il-125-מרקו_יאנקוביץ.webp",
+   "image": "assets/players/israeli-premier-league/il-125.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2443,9 +2443,9 @@
    ]
   },
   {
-   "id": "il-126-משה_בן_לולו",
+   "id": "il-126",
    "name": "משה בן לולו",
-   "image": "assets/players/israeli-premier-league/il-126-משה_בן_לולו.webp",
+   "image": "assets/players/israeli-premier-league/il-126.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2460,9 +2460,9 @@
    ]
   },
   {
-   "id": "il-127-מתן_אוחיון",
+   "id": "il-127",
    "name": "מתן אוחיון",
-   "image": "assets/players/israeli-premier-league/il-127-מתן_אוחיון.webp",
+   "image": "assets/players/israeli-premier-league/il-127.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2482,9 +2482,9 @@
    ]
   },
   {
-   "id": "il-128-נטע_לביא",
+   "id": "il-128",
    "name": "נטע לביא",
-   "image": "assets/players/israeli-premier-league/il-128-נטע_לביא.webp",
+   "image": "assets/players/israeli-premier-league/il-128.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2499,9 +2499,9 @@
    ]
   },
   {
-   "id": "il-129-ניב_זריהן",
+   "id": "il-129",
    "name": "ניב זריהן",
-   "image": "assets/players/israeli-premier-league/il-129-ניב_זריהן.webp",
+   "image": "assets/players/israeli-premier-league/il-129.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2521,9 +2521,9 @@
    ]
   },
   {
-   "id": "il-130-ניר_דוידוביץ",
+   "id": "il-130",
    "name": "ניר דוידוביץ'",
-   "image": "assets/players/israeli-premier-league/il-130-ניר_דוידוביץ.webp",
+   "image": "assets/players/israeli-premier-league/il-130.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2538,9 +2538,9 @@
    ]
   },
   {
-   "id": "il-131-סטיב_גורי",
+   "id": "il-131",
    "name": "סטיב גורי",
-   "image": "assets/players/israeli-premier-league/il-131-סטיב_גורי.webp",
+   "image": "assets/players/israeli-premier-league/il-131.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2555,9 +2555,9 @@
    ]
   },
   {
-   "id": "il-132-סטפנוס_אתנסיאדיס",
+   "id": "il-132",
    "name": "סטפנוס אתנסיאדיס",
-   "image": "assets/players/israeli-premier-league/il-132-סטפנוס_אתנסיאדיס.webp",
+   "image": "assets/players/israeli-premier-league/il-132.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2572,9 +2572,9 @@
    ]
   },
   {
-   "id": "il-133-עאיד_חבשי",
+   "id": "il-133",
    "name": "עאיד חבשי",
-   "image": "assets/players/israeli-premier-league/il-133-עאיד_חבשי.webp",
+   "image": "assets/players/israeli-premier-league/il-133.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2589,9 +2589,9 @@
    ]
   },
   {
-   "id": "il-134-עדן_בן_בסט",
+   "id": "il-134",
    "name": "עדן בן בסט",
-   "image": "assets/players/israeli-premier-league/il-134-עדן_בן_בסט.webp",
+   "image": "assets/players/israeli-premier-league/il-134.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2616,9 +2616,9 @@
    ]
   },
   {
-   "id": "il-135-עודד_בלוש",
+   "id": "il-135",
    "name": "עודד בלוש",
-   "image": "assets/players/israeli-premier-league/il-135-עודד_בלוש.webp",
+   "image": "assets/players/israeli-premier-league/il-135.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2633,9 +2633,9 @@
    ]
   },
   {
-   "id": "il-136-עומר_אצילי",
+   "id": "il-136",
    "name": "עומר אצילי",
-   "image": "assets/players/israeli-premier-league/il-136-עומר_אצילי.webp",
+   "image": "assets/players/israeli-premier-league/il-136.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2660,9 +2660,9 @@
    ]
   },
   {
-   "id": "il-137-עומר_בוקסנבוים",
+   "id": "il-137",
    "name": "עומר בוקסנבוים",
-   "image": "assets/players/israeli-premier-league/il-137-עומר_בוקסנבוים.webp",
+   "image": "assets/players/israeli-premier-league/il-137.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2677,9 +2677,9 @@
    ]
   },
   {
-   "id": "il-138-עומר_דמארי",
+   "id": "il-138",
    "name": "עומר דמארי",
-   "image": "assets/players/israeli-premier-league/il-138-עומר_דמארי.webp",
+   "image": "assets/players/israeli-premier-league/il-138.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2699,9 +2699,9 @@
    ]
   },
   {
-   "id": "il-139-עומרי_גלזר",
+   "id": "il-139",
    "name": "עומרי גלזר",
-   "image": "assets/players/israeli-premier-league/il-139-עומרי_גלזר.webp",
+   "image": "assets/players/israeli-premier-league/il-139.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2716,9 +2716,9 @@
    ]
   },
   {
-   "id": "il-140-עופר_טלקר",
+   "id": "il-140",
    "name": "עופר טלקר",
-   "image": "assets/players/israeli-premier-league/il-140-עופר_טלקר.webp",
+   "image": "assets/players/israeli-premier-league/il-140.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2733,9 +2733,9 @@
    ]
   },
   {
-   "id": "il-141-עידן_ורד",
+   "id": "il-141",
    "name": "עידן ורד",
-   "image": "assets/players/israeli-premier-league/il-141-עידן_ורד.webp",
+   "image": "assets/players/israeli-premier-league/il-141.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2760,9 +2760,9 @@
    ]
   },
   {
-   "id": "il-142-עידן_טל",
+   "id": "il-142",
    "name": "עידן טל",
-   "image": "assets/players/israeli-premier-league/il-142-עידן_טל.webp",
+   "image": "assets/players/israeli-premier-league/il-142.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2787,9 +2787,9 @@
    ]
   },
   {
-   "id": "il-143-עמית_ביטון",
+   "id": "il-143",
    "name": "עמית ביטון",
-   "image": "assets/players/israeli-premier-league/il-143-עמית_ביטון.webp",
+   "image": "assets/players/israeli-premier-league/il-143.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2804,9 +2804,9 @@
    ]
   },
   {
-   "id": "il-144-עמרי_אפק",
+   "id": "il-144",
    "name": "עמרי אפק",
-   "image": "assets/players/israeli-premier-league/il-144-עמרי_אפק.webp",
+   "image": "assets/players/israeli-premier-league/il-144.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2831,9 +2831,9 @@
    ]
   },
   {
-   "id": "il-145-ערן_לוי_-כדורגלן",
+   "id": "il-145",
    "name": "ערן לוי",
-   "image": "assets/players/israeli-premier-league/il-145-ערן_לוי_-כדורגלן.webp",
+   "image": "assets/players/israeli-premier-league/il-145.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2858,9 +2858,9 @@
    ]
   },
   {
-   "id": "il-146-פבלו_ברנדאן",
+   "id": "il-146",
    "name": "פבלו ברנדאן",
-   "image": "assets/players/israeli-premier-league/il-146-פבלו_ברנדאן.webp",
+   "image": "assets/players/israeli-premier-league/il-146.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2875,9 +2875,9 @@
    ]
   },
   {
-   "id": "il-147-פטריק_טומאסי",
+   "id": "il-147",
    "name": "פטריק טומאסי",
-   "image": "assets/players/israeli-premier-league/il-147-פטריק_טומאסי.webp",
+   "image": "assets/players/israeli-premier-league/il-147.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2892,9 +2892,9 @@
    ]
   },
   {
-   "id": "il-148-פלמן_גלבוב",
+   "id": "il-148",
    "name": "פלמן גלבוב",
-   "image": "assets/players/israeli-premier-league/il-148-פלמן_גלבוב.webp",
+   "image": "assets/players/israeli-premier-league/il-148.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2909,9 +2909,9 @@
    ]
   },
   {
-   "id": "il-149-צ-יקו_אופואדו",
+   "id": "il-149",
    "name": "צ'יקו אופואדו",
-   "image": "assets/players/israeli-premier-league/il-149-צ-יקו_אופואדו.webp",
+   "image": "assets/players/israeli-premier-league/il-149.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2926,9 +2926,9 @@
    ]
   },
   {
-   "id": "il-150-צבי_ארליך",
+   "id": "il-150",
    "name": "צבי ארליך",
-   "image": "assets/players/israeli-premier-league/il-150-צבי_ארליך.webp",
+   "image": "assets/players/israeli-premier-league/il-150.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2943,9 +2943,9 @@
    ]
   },
   {
-   "id": "il-151-קייס_גאנם",
+   "id": "il-151",
    "name": "קייס גאנם",
-   "image": "assets/players/israeli-premier-league/il-151-קייס_גאנם.webp",
+   "image": "assets/players/israeli-premier-league/il-151.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2960,9 +2960,9 @@
    ]
   },
   {
-   "id": "il-152-קמיל_ואצק",
+   "id": "il-152",
    "name": "קמיל ואצק",
-   "image": "assets/players/israeli-premier-league/il-152-קמיל_ואצק.webp",
+   "image": "assets/players/israeli-premier-league/il-152.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2977,9 +2977,9 @@
    ]
   },
   {
-   "id": "il-153-קרלוס_גרסיה",
+   "id": "il-153",
    "name": "קרלוס גרסיה",
-   "image": "assets/players/israeli-premier-league/il-153-קרלוס_גרסיה.webp",
+   "image": "assets/players/israeli-premier-league/il-153.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -2994,9 +2994,9 @@
    ]
   },
   {
-   "id": "il-154-רביד_גזל",
+   "id": "il-154",
    "name": "רביד גזל",
-   "image": "assets/players/israeli-premier-league/il-154-רביד_גזל.webp",
+   "image": "assets/players/israeli-premier-league/il-154.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3016,9 +3016,9 @@
    ]
   },
   {
-   "id": "il-155-רדובן_הרומאדקו",
+   "id": "il-155",
    "name": "רדובן הרומאדקו",
-   "image": "assets/players/israeli-premier-league/il-155-רדובן_הרומאדקו.webp",
+   "image": "assets/players/israeli-premier-league/il-155.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3033,9 +3033,9 @@
    ]
   },
   {
-   "id": "il-156-רונאלדו_ואסקס",
+   "id": "il-156",
    "name": "רונאלדו ואסקס",
-   "image": "assets/players/israeli-premier-league/il-156-רונאלדו_ואסקס.webp",
+   "image": "assets/players/israeli-premier-league/il-156.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3050,9 +3050,9 @@
    ]
   },
   {
-   "id": "il-157-רוני_לוי",
+   "id": "il-157",
    "name": "רוני לוי",
-   "image": "assets/players/israeli-premier-league/il-157-רוני_לוי.webp",
+   "image": "assets/players/israeli-premier-league/il-157.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3072,9 +3072,9 @@
    ]
   },
   {
-   "id": "il-158-רועי_גורדנה",
+   "id": "il-158",
    "name": "רועי גורדנה",
-   "image": "assets/players/israeli-premier-league/il-158-רועי_גורדנה.webp",
+   "image": "assets/players/israeli-premier-league/il-158.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3089,9 +3089,9 @@
    ]
   },
   {
-   "id": "il-159-רז_מאיר",
+   "id": "il-159",
    "name": "רז מאיר",
-   "image": "assets/players/israeli-premier-league/il-159-רז_מאיר.webp",
+   "image": "assets/players/israeli-premier-league/il-159.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3111,9 +3111,9 @@
    ]
   },
   {
-   "id": "il-160-ריצ-מונד_בואצ-י",
+   "id": "il-160",
    "name": "ריצ'מונד בואצ'י",
-   "image": "assets/players/israeli-premier-league/il-160-ריצ-מונד_בואצ-י.webp",
+   "image": "assets/players/israeli-premier-league/il-160.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3128,9 +3128,9 @@
    ]
   },
   {
-   "id": "il-161-רמי_אבו_לבן",
+   "id": "il-161",
    "name": "רמי אבו לבן",
-   "image": "assets/players/israeli-premier-league/il-161-רמי_אבו_לבן.webp",
+   "image": "assets/players/israeli-premier-league/il-161.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3145,9 +3145,9 @@
    ]
   },
   {
-   "id": "il-162-רן_אבוקרט",
+   "id": "il-162",
    "name": "רן אבוקרט",
-   "image": "assets/players/israeli-premier-league/il-162-רן_אבוקרט.webp",
+   "image": "assets/players/israeli-premier-league/il-162.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3162,9 +3162,9 @@
    ]
   },
   {
-   "id": "il-163-רן_בנימין",
+   "id": "il-163",
    "name": "רן בנימין",
-   "image": "assets/players/israeli-premier-league/il-163-רן_בנימין.webp",
+   "image": "assets/players/israeli-premier-league/il-163.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3179,9 +3179,9 @@
    ]
   },
   {
-   "id": "il-164-רפי_אוסמו",
+   "id": "il-164",
    "name": "רפי אוסמו",
-   "image": "assets/players/israeli-premier-league/il-164-רפי_אוסמו.webp",
+   "image": "assets/players/israeli-premier-league/il-164.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3196,9 +3196,9 @@
    ]
   },
   {
-   "id": "il-165-שאבייר_אנדרסון",
+   "id": "il-165",
    "name": "שאבייר אנדרסון",
-   "image": "assets/players/israeli-premier-league/il-165-שאבייר_אנדרסון.webp",
+   "image": "assets/players/israeli-premier-league/il-165.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3213,9 +3213,9 @@
    ]
   },
   {
-   "id": "il-166-שביט_אלימלך",
+   "id": "il-166",
    "name": "שביט אלימלך",
-   "image": "assets/players/israeli-premier-league/il-166-שביט_אלימלך.webp",
+   "image": "assets/players/israeli-premier-league/il-166.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3235,9 +3235,9 @@
    ]
   },
   {
-   "id": "il-167-שולי_גילארדי",
+   "id": "il-167",
    "name": "שולי גילארדי",
-   "image": "assets/players/israeli-premier-league/il-167-שולי_גילארדי.webp",
+   "image": "assets/players/israeli-premier-league/il-167.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3252,9 +3252,9 @@
    ]
   },
   {
-   "id": "il-168-שון_גולדברג",
+   "id": "il-168",
    "name": "שון גולדברג",
-   "image": "assets/players/israeli-premier-league/il-168-שון_גולדברג.webp",
+   "image": "assets/players/israeli-premier-league/il-168.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3284,9 +3284,9 @@
    ]
   },
   {
-   "id": "il-169-שון_וייסמן",
+   "id": "il-169",
    "name": "שון וייסמן",
-   "image": "assets/players/israeli-premier-league/il-169-שון_וייסמן.webp",
+   "image": "assets/players/israeli-premier-league/il-169.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3301,9 +3301,9 @@
    ]
   },
   {
-   "id": "il-170-שחר_הירש",
+   "id": "il-170",
    "name": "שחר הירש",
-   "image": "assets/players/israeli-premier-league/il-170-שחר_הירש.webp",
+   "image": "assets/players/israeli-premier-league/il-170.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3323,9 +3323,9 @@
    ]
   },
   {
-   "id": "il-171-שי_אליאס",
+   "id": "il-171",
    "name": "שי אליאס",
-   "image": "assets/players/israeli-premier-league/il-171-שי_אליאס.webp",
+   "image": "assets/players/israeli-premier-league/il-171.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3340,9 +3340,9 @@
    ]
   },
   {
-   "id": "il-172-שי_הולצמן",
+   "id": "il-172",
    "name": "שי הולצמן",
-   "image": "assets/players/israeli-premier-league/il-172-שי_הולצמן.webp",
+   "image": "assets/players/israeli-premier-league/il-172.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3362,9 +3362,9 @@
    ]
   },
   {
-   "id": "il-173-שלום_אביטן",
+   "id": "il-173",
    "name": "שלום אביטן",
-   "image": "assets/players/israeli-premier-league/il-173-שלום_אביטן.webp",
+   "image": "assets/players/israeli-premier-league/il-173.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3384,9 +3384,9 @@
    ]
   },
   {
-   "id": "il-174-שלומי_אזולאי_-קשר",
+   "id": "il-174",
    "name": "שלומי אזולאי",
-   "image": "assets/players/israeli-premier-league/il-174-שלומי_אזולאי_-קשר.webp",
+   "image": "assets/players/israeli-premier-league/il-174.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3416,9 +3416,9 @@
    ]
   },
   {
-   "id": "il-175-שלומי_ארבייטמן",
+   "id": "il-175",
    "name": "שלומי ארבייטמן",
-   "image": "assets/players/israeli-premier-league/il-175-שלומי_ארבייטמן.webp",
+   "image": "assets/players/israeli-premier-league/il-175.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3443,9 +3443,9 @@
    ]
   },
   {
-   "id": "il-176-שמעון_גרשון",
+   "id": "il-176",
    "name": "שמעון גרשון",
-   "image": "assets/players/israeli-premier-league/il-176-שמעון_גרשון.webp",
+   "image": "assets/players/israeli-premier-league/il-176.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3465,9 +3465,9 @@
    ]
   },
   {
-   "id": "il-177-שרן_ייני",
+   "id": "il-177",
    "name": "שרן ייני",
-   "image": "assets/players/israeli-premier-league/il-177-שרן_ייני.webp",
+   "image": "assets/players/israeli-premier-league/il-177.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3482,9 +3482,9 @@
    ]
   },
   {
-   "id": "il-178-תום_אלמדון",
+   "id": "il-178",
    "name": "תום אלמדון",
-   "image": "assets/players/israeli-premier-league/il-178-תום_אלמדון.webp",
+   "image": "assets/players/israeli-premier-league/il-178.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
