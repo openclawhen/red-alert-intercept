@@ -1,0 +1,12 @@
+{
+  "name": "match-the-player-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Match The Player - browser version. Plain HTML/CSS/JS, no build step, no dependencies.",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "test": "node tests/engine.test.mjs"
+  },
+  "type": "module"
+}

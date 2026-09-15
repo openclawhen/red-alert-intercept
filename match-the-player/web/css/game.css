@@ -1,0 +1,287 @@
+/* ==========================================================================
+   game.css - HUD, player card, club option grid, answer animations
+   ========================================================================== */
+
+.screen--game { gap: 12px; }
+
+/* ---------- HUD ----------------------------------------------------------- */
+.hud { display: flex; align-items: center; gap: 12px; padding-right: 46px; }
+
+.hud__score { flex: 1; position: relative; display: flex; align-items: baseline; gap: 8px; }
+.hud__score-value {
+  font-size: 1.85rem; font-weight: 900; letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+}
+.hud__score-delta {
+  font-size: 0.95rem; font-weight: 800; opacity: 0;
+  font-variant-numeric: tabular-nums;
+}
+.hud__score-delta.is-up { color: var(--good); animation: delta-fly 900ms ease-out both; }
+.hud__score-delta.is-down { color: var(--bad); animation: delta-fly 900ms ease-out both; }
+@keyframes delta-fly {
+  0%   { opacity: 0; transform: translateY(6px); }
+  18%  { opacity: 1; transform: translateY(-2px); }
+  70%  { opacity: 1; transform: translateY(-6px); }
+  100% { opacity: 0; transform: translateY(-14px); }
+}
+
+.hud__lives { display: flex; gap: 5px; }
+.life {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--bad);
+  box-shadow: 0 0 9px rgba(255, 77, 94, 0.55);
+  transition: all 260ms ease;
+}
+.life.is-lost { background: rgba(255,255,255,.13); box-shadow: none; transform: scale(0.72); }
+
+.hud__bar {
+  height: 5px; border-radius: 999px;
+  background: rgba(255,255,255,.07);
+  overflow: hidden;
+}
+.hud__bar-fill {
+  height: 100%; width: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transform-origin: left center;
+  transition: transform 220ms linear, background 300ms ease;
+}
+.hud__bar-fill.is-low { background: linear-gradient(90deg, var(--warn), var(--bad)); }
+.hud__bar-fill.is-critical { animation: bar-pulse 700ms ease-in-out infinite; }
+@keyframes bar-pulse { 50% { opacity: 0.45; } }
+
+.hud__meta { display: flex; gap: 7px; align-items: center; flex-wrap: wrap; }
+.chip--combo { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 35%, transparent); }
+.chip--combo.is-hot {
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  animation: pop 320ms cubic-bezier(.2,1.5,.4,1) both;
+}
+
+/* ---------- Player card --------------------------------------------------- */
+.card-stage { display: grid; place-items: center; min-height: 0; flex: 1; align-content: center; }
+
+.player-card {
+  position: relative;
+  width: min(100%, 300px);
+  border-radius: 22px;
+  padding: 14px 14px 16px;
+  background:
+    linear-gradient(170deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.03) 45%, rgba(255,255,255,.055) 100%);
+  border: 1px solid var(--stroke);
+  box-shadow: var(--shadow-lift), inset 0 1px 0 rgba(255,255,255,.14);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  overflow: hidden;
+  animation: card-in 340ms cubic-bezier(.2,.9,.3,1) both;
+}
+@keyframes card-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.96); }
+  to   { opacity: 1; transform: none; }
+}
+.player-card::before {
+  /* soft club-coloured wash behind the portrait */
+  content: "";
+  position: absolute; inset: 0;
+  background: radial-gradient(90% 60% at 50% 0%, var(--card-tint, rgba(0,255,157,.18)) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.player-card__frame {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  transition: aspect-ratio 200ms ease;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #101827, #0a101c);
+  border: 1px solid var(--stroke-soft);
+  display: grid; place-items: center;
+}
+/* A generated stand-in needs less room than a real photo */
+.player-card__frame--blank { aspect-ratio: 5 / 4; }
+
+.player-card__photo {
+  width: 100%; height: 100%;
+  /* the migrated photos are cut-outs, so fit the whole figure rather than cropping it */
+  object-fit: contain;
+  padding: 6%;
+  object-position: center;
+}
+.player-card__photo.is-loading { opacity: 0; }
+.player-card__photo { transition: opacity 260ms ease; }
+
+/* Generated stand-in when no real photo is available */
+.portrait-fallback {
+  width: 100%; height: 100%;
+  display: grid; place-items: center;
+  position: relative;
+}
+.portrait-fallback__initials.is-masked { color: rgba(255, 255, 255, 0.35); }
+.portrait-fallback__initials {
+  position: relative; z-index: 2;
+  font-size: 2.6rem; font-weight: 900; letter-spacing: -0.05em;
+  color: rgba(255, 255, 255, 0.94);
+  text-shadow: 0 8px 26px rgba(0, 0, 0, 0.7);
+}
+.portrait-fallback__ring {
+  position: absolute;
+  width: 46%; aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: radial-gradient(circle at 50% 30%, rgba(255,255,255,.1), rgba(255,255,255,.02) 70%);
+  box-shadow: 0 10px 40px -12px rgba(0, 0, 0, 0.8);
+}
+.portrait-fallback::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: radial-gradient(60% 50% at 50% 45%, rgba(255,255,255,.06), transparent 72%);
+}
+
+.player-card__body { padding: 12px 4px 0; text-align: center; position: relative; }
+.player-card__name {
+  font-size: 1.15rem; font-weight: 800; letter-spacing: -0.02em;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.player-card__name.is-hidden { color: var(--text-faint); letter-spacing: 0.3em; }
+.player-card__facts {
+  margin-top: 8px;
+  display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;
+}
+.player-card__fact {
+  font-size: 0.7rem; font-weight: 700;
+  padding: 4px 9px; border-radius: 7px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid var(--stroke-soft);
+  color: var(--text-dim);
+}
+
+/* Career strip shown on reveal */
+.career {
+  margin-top: 11px;
+  display: flex; flex-direction: column; gap: 5px;
+  animation: screen-in 260ms ease both;
+}
+.career__row { display: flex; align-items: center; gap: 8px; font-size: 0.74rem; }
+.career__name { flex: 1; text-align: left; color: var(--text-dim); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.career__row.is-answer .career__name { color: var(--text); font-weight: 700; }
+.career__years { color: var(--text-faint); font-variant-numeric: tabular-nums; }
+.career__bar { height: 4px; border-radius: 999px; background: rgba(255,255,255,.08); width: 62px; overflow: hidden; flex: 0 0 auto; }
+.career__bar span { display: block; height: 100%; border-radius: 999px; background: var(--accent); }
+
+.player-card.is-correct { animation: card-correct 520ms cubic-bezier(.2,.9,.3,1) both; }
+.player-card.is-wrong { animation: card-wrong 460ms cubic-bezier(.36,.07,.19,.97) both; }
+@keyframes card-correct {
+  0%   { transform: none; box-shadow: var(--shadow-lift); }
+  35%  { transform: scale(1.035); box-shadow: 0 0 0 2px var(--good), 0 0 46px -6px var(--good); }
+  100% { transform: none; box-shadow: 0 0 0 1px color-mix(in srgb, var(--good) 45%, transparent), var(--shadow-lift); }
+}
+@keyframes card-wrong {
+  0%, 100% { transform: translateX(0); }
+  15% { transform: translateX(-9px); }
+  32% { transform: translateX(8px); }
+  50% { transform: translateX(-5px); }
+  70% { transform: translateX(4px); }
+  85% { transform: translateX(-2px); }
+}
+.player-card.is-wrong { box-shadow: 0 0 0 1px color-mix(in srgb, var(--bad) 50%, transparent), var(--shadow-lift); }
+
+.question {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--text-faint);
+  letter-spacing: 0.02em;
+}
+
+/* ---------- Club option grid ---------------------------------------------- */
+.club-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+.club-grid.is-six { grid-template-columns: 1fr 1fr; }
+
+.club-option {
+  position: relative;
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 11px;
+  min-height: 58px;
+  border-radius: 14px;
+  border: 1px solid var(--stroke);
+  background: var(--panel);
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 130ms ease, border-color 180ms ease, background 180ms ease, opacity 220ms ease;
+  touch-action: manipulation;
+}
+.club-option:active { transform: scale(0.96); }
+.club-option[disabled] { cursor: default; }
+.club-option__name {
+  font-size: 0.79rem; font-weight: 700; line-height: 1.15;
+  overflow-wrap: anywhere;
+  overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+}
+
+/* Monogram badge - a neutral stand-in, NOT a club crest.
+   Drop a real crest at assets/clubs/<id>.png and list the id in data/club-logos.json. */
+.club-badge {
+  width: 34px; height: 34px; flex: 0 0 auto;
+  border-radius: 10px;
+  display: grid; place-items: center;
+  font-size: 0.62rem; font-weight: 900; letter-spacing: -0.01em;
+  border: 1px solid rgba(255,255,255,.16);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.22);
+  overflow: hidden;
+}
+.club-badge img { width: 100%; height: 100%; object-fit: contain; }
+
+.club-option.is-correct {
+  border-color: var(--good);
+  background: color-mix(in srgb, var(--good) 16%, transparent);
+  animation: pop 320ms cubic-bezier(.2,1.5,.4,1) both;
+}
+.club-option.is-partial {
+  border-color: var(--warn);
+  background: color-mix(in srgb, var(--warn) 14%, transparent);
+}
+.club-option.is-wrong {
+  border-color: var(--bad);
+  background: color-mix(in srgb, var(--bad) 14%, transparent);
+}
+.club-option.is-dim { opacity: 0.3; }
+
+.club-option__score {
+  position: absolute; top: 5px; right: 7px;
+  font-size: 0.62rem; font-weight: 900;
+  font-variant-numeric: tabular-nums;
+}
+.club-option.is-correct .club-option__score { color: var(--good); }
+.club-option.is-partial .club-option__score { color: var(--warn); }
+
+/* ---------- Feedback line -------------------------------------------------- */
+.feedback {
+  min-height: 22px;
+  text-align: center;
+  font-size: 0.82rem; font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.feedback.is-good { color: var(--good); }
+.feedback.is-partial { color: var(--warn); }
+.feedback.is-bad { color: var(--bad); }
+.feedback span { animation: pop 260ms cubic-bezier(.2,1.4,.4,1) both; display: inline-block; }
+
+/* ---------- Room to breathe on bigger screens ----------------------------- */
+@media (min-height: 780px) {
+  .player-card { width: min(100%, 318px); }
+  .club-option { min-height: 64px; }
+}
+@media (min-width: 560px) {
+  .club-grid.is-six { grid-template-columns: repeat(3, 1fr); }
+}
+/* Short phones: shrink the card so the option grid always fits without scroll */
+@media (max-height: 700px) {
+  .player-card { width: min(100%, 250px); padding: 11px 11px 12px; }
+  .player-card__name { font-size: 1rem; }
+  .hud__score-value { font-size: 1.5rem; }
+  .club-option { min-height: 52px; }
+}

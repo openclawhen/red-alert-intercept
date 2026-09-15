@@ -1,0 +1,3507 @@
+{
+ "league": "israeli-premier-league",
+ "note": "Migrated automatically from the original Pygame main.py (character_color_map). 'weight' is the original career-share score the old game awarded for that club.",
+ "players": [
+  {
+   "id": "il-001-אאוג-ן_טריקה",
+   "name": "אאוג'ן טריקה",
+   "image": "",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-002-אבי_בנימין_-כדורגלן",
+   "name": "אבי בנימין",
+   "image": "assets/players/israeli-premier-league/il-002-אבי_בנימין_-כדורגלן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-003-אבישי_כהן_-כדורגלן",
+   "name": "אבישי כהן",
+   "image": "assets/players/israeli-premier-league/il-003-אבישי_כהן_-כדורגלן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 14
+    }
+   ]
+  },
+  {
+   "id": "il-004-אברהם_בית_הלוי",
+   "name": "אברהם בית הלוי",
+   "image": "assets/players/israeli-premier-league/il-004-אברהם_בית_הלוי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 9
+    }
+   ]
+  },
+  {
+   "id": "il-005-אדוארדו_גררו",
+   "name": "אדוארדו גררו",
+   "image": "assets/players/israeli-premier-league/il-005-אדוארדו_גררו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-006-אדווין_גיאסי",
+   "name": "אדווין גיאסי",
+   "image": "assets/players/israeli-premier-league/il-006-אדווין_גיאסי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-007-אדי_גוטליב",
+   "name": "אדי גוטליב",
+   "image": "assets/players/israeli-premier-league/il-007-אדי_גוטליב.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 22
+    }
+   ]
+  },
+  {
+   "id": "il-008-אהרן_אמר",
+   "name": "אהרן אמר",
+   "image": "assets/players/israeli-premier-league/il-008-אהרן_אמר.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-009-אובונג_מוזס_אקפאי",
+   "name": "אובונג מוזס אקפאי",
+   "image": "assets/players/israeli-premier-league/il-009-אובונג_מוזס_אקפאי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-010-אוסקר_גלוך",
+   "name": "אוסקר גלוך",
+   "image": "assets/players/israeli-premier-league/il-010-אוסקר_גלוך.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-011-אופק_ביטון",
+   "name": "אופק ביטון",
+   "image": "assets/players/israeli-premier-league/il-011-אופק_ביטון.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-012-אור_אינברום",
+   "name": "אור אינברום",
+   "image": "assets/players/israeli-premier-league/il-012-אור_אינברום.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-013-אורי_אוזן",
+   "name": "אורי אוזן",
+   "image": "assets/players/israeli-premier-league/il-013-אורי_אוזן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "impossible",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 66
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 33
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 33
+    }
+   ]
+  },
+  {
+   "id": "il-014-אושר_דוידה",
+   "name": "אושר דוידה",
+   "image": "assets/players/israeli-premier-league/il-014-אושר_דוידה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 25
+    }
+   ]
+  },
+  {
+   "id": "il-015-אושרי_גיטא",
+   "name": "אושרי גיטא",
+   "image": "assets/players/israeli-premier-league/il-015-אושרי_גיטא.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-016-איאד_אבו_עביד",
+   "name": "איאד אבו עביד",
+   "image": "assets/players/israeli-premier-league/il-016-איאד_אבו_עביד.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 40
+    }
+   ]
+  },
+  {
+   "id": "il-017-איבזיטו_אוגבונה",
+   "name": "איבזיטו אוגבונה",
+   "image": "assets/players/israeli-premier-league/il-017-איבזיטו_אוגבונה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-018-איברהים_באנגורה",
+   "name": "איברהים באנגורה",
+   "image": "assets/players/israeli-premier-league/il-018-איברהים_באנגורה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-019-איוואן_גצקו",
+   "name": "איוואן גצקו",
+   "image": "assets/players/israeli-premier-league/il-019-איוואן_גצקו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-020-אייל_ברקוביץ",
+   "name": "אייל ברקוביץ'",
+   "image": "assets/players/israeli-premier-league/il-020-אייל_ברקוביץ.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 25
+    }
+   ]
+  },
+  {
+   "id": "il-021-אייל_גולסה",
+   "name": "אייל גולסה",
+   "image": "assets/players/israeli-premier-league/il-021-אייל_גולסה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 77
+    }
+   ]
+  },
+  {
+   "id": "il-022-איציק_כהן_-בלם",
+   "name": "איציק כהן",
+   "image": "assets/players/israeli-premier-league/il-022-איציק_כהן_-בלם.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-023-איתן_טיבי",
+   "name": "איתן טיבי",
+   "image": "assets/players/israeli-premier-league/il-023-איתן_טיבי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 50
+    }
+   ]
+  },
+  {
+   "id": "il-024-אלון_חרזי",
+   "name": "אלון חרזי",
+   "image": "assets/players/israeli-premier-league/il-024-אלון_חרזי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 10
+    }
+   ]
+  },
+  {
+   "id": "il-025-אלי_אוחנה",
+   "name": "אלי אוחנה",
+   "image": "assets/players/israeli-premier-league/il-025-אלי_אוחנה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-026-אלי_דסה",
+   "name": "אלי דסה",
+   "image": "assets/players/israeli-premier-league/il-026-אלי_דסה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 83
+    }
+   ]
+  },
+  {
+   "id": "il-027-אלי_כהן_-מאמן",
+   "name": "אלי כהן",
+   "image": "assets/players/israeli-premier-league/il-027-אלי_כהן_-מאמן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 37
+    }
+   ]
+  },
+  {
+   "id": "il-028-אליניב_ברדה",
+   "name": "אליניב ברדה",
+   "image": "assets/players/israeli-premier-league/il-028-אליניב_ברדה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-029-אליסון_דוס_סנטוס_-כדורגלן",
+   "name": "אליסון דוס סנטוס",
+   "image": "assets/players/israeli-premier-league/il-029-אליסון_דוס_סנטוס_-כדורגלן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-030-אלירן_דנין",
+   "name": "אלירן דנין",
+   "image": "assets/players/israeli-premier-league/il-030-אלירן_דנין.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 25
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 25
+    }
+   ]
+  },
+  {
+   "id": "il-031-אלירן_חודדה",
+   "name": "אלירן חודדה",
+   "image": "assets/players/israeli-premier-league/il-031-אלירן_חודדה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-032-אלכסנדר_אובארוב",
+   "name": "אלכסנדר אובארוב",
+   "image": "assets/players/israeli-premier-league/il-032-אלכסנדר_אובארוב.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-033-אלכסנדר_בולייביץ",
+   "name": "אלכסנדר בולייביץ'",
+   "image": "assets/players/israeli-premier-league/il-033-אלכסנדר_בולייביץ.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-034-אלן_אוז-בולט",
+   "name": "אלן אוז'בולט",
+   "image": "assets/players/israeli-premier-league/il-034-אלן_אוז-בולט.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-035-אנדרס_טונייס",
+   "name": "אנדרס טונייס",
+   "image": "assets/players/israeli-premier-league/il-035-אנדרס_טונייס.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-036-אנתוני_אנאן",
+   "name": "אנתוני אנאן",
+   "image": "assets/players/israeli-premier-league/il-036-אנתוני_אנאן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-037-אסי_דומב",
+   "name": "אסי דומב",
+   "image": "assets/players/israeli-premier-league/il-037-אסי_דומב.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 33
+    }
+   ]
+  },
+  {
+   "id": "il-038-אפולה_אדל",
+   "name": "אפולה אדל",
+   "image": "assets/players/israeli-premier-league/il-038-אפולה_אדל.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-039-ארון_אולנארה",
+   "name": "ארון אולנארה",
+   "image": "assets/players/israeli-premier-league/il-039-ארון_אולנארה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-040-אריק_בנדו",
+   "name": "אריק בנדו",
+   "image": "assets/players/israeli-premier-league/il-040-אריק_בנדו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 44
+    }
+   ]
+  },
+  {
+   "id": "il-041-בוני_גינצבורג",
+   "name": "בוני גינצבורג",
+   "image": "assets/players/israeli-premier-league/il-041-בוני_גינצבורג.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 75
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 25
+    }
+   ]
+  },
+  {
+   "id": "il-042-בירם_כיאל",
+   "name": "בירם כיאל",
+   "image": "assets/players/israeli-premier-league/il-042-בירם_כיאל.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-043-בן_ביטון",
+   "name": "בן ביטון",
+   "image": "assets/players/israeli-premier-league/il-043-בן_ביטון.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "impossible",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 20
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 20
+    }
+   ]
+  },
+  {
+   "id": "il-044-ברוך_דגו",
+   "name": "ברוך דגו",
+   "image": "assets/players/israeli-premier-league/il-044-ברוך_דגו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 33
+    }
+   ]
+  },
+  {
+   "id": "il-045-ברק_בדש",
+   "name": "ברק בדש",
+   "image": "assets/players/israeli-premier-league/il-045-ברק_בדש.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 50
+    }
+   ]
+  },
+  {
+   "id": "il-046-ברק_יצחקי",
+   "name": "ברק יצחקי",
+   "image": "assets/players/israeli-premier-league/il-046-ברק_יצחקי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 90
+    }
+   ]
+  },
+  {
+   "id": "il-047-ברק_לוי",
+   "name": "ברק לוי",
+   "image": "assets/players/israeli-premier-league/il-047-ברק_לוי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-048-ג-וניור_ויסה",
+   "name": "ג'וניור ויסה",
+   "image": "assets/players/israeli-premier-league/il-048-ג-וניור_ויסה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-049-ג-ונתן_אסוס",
+   "name": "ג'ונתן אסוס",
+   "image": "assets/players/israeli-premier-league/il-049-ג-ונתן_אסוס.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-050-ג-ורג-ה_יובאנוביץ",
+   "name": "ג'ורג'ה יובאנוביץ'",
+   "image": "assets/players/israeli-premier-league/il-050-ג-ורג-ה_יובאנוביץ.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-051-גדי_ברומר",
+   "name": "גדי ברומר",
+   "image": "assets/players/israeli-premier-league/il-051-גדי_ברומר.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-052-גודסוויי_דוניו",
+   "name": "גודסוויי דוניו",
+   "image": "assets/players/israeli-premier-league/il-052-גודסוויי_דוניו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-053-גיא_אסולין",
+   "name": "גיא אסולין",
+   "image": "assets/players/israeli-premier-league/il-053-גיא_אסולין.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-054-גיא_בדש",
+   "name": "גיא בדש",
+   "image": "assets/players/israeli-premier-league/il-054-גיא_בדש.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-055-גיא_חיימוב",
+   "name": "גיא חיימוב",
+   "image": "assets/players/israeli-premier-league/il-055-גיא_חיימוב.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 27
+    }
+   ]
+  },
+  {
+   "id": "il-056-גיורא_אנטמן",
+   "name": "גיורא אנטמן",
+   "image": "assets/players/israeli-premier-league/il-056-גיורא_אנטמן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 75
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 50
+    }
+   ]
+  },
+  {
+   "id": "il-057-גיל_יצחק",
+   "name": "גיל יצחק",
+   "image": "assets/players/israeli-premier-league/il-057-גיל_יצחק.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-058-גילי_ורמוט",
+   "name": "גילי ורמוט",
+   "image": "assets/players/israeli-premier-league/il-058-גילי_ורמוט.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "impossible",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 50
+    }
+   ]
+  },
+  {
+   "id": "il-059-גל_אלברמן",
+   "name": "גל אלברמן",
+   "image": "assets/players/israeli-premier-league/il-059-גל_אלברמן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 50
+    }
+   ]
+  },
+  {
+   "id": "il-060-דאגלס_דה_סילבה",
+   "name": "דאגלס דה סילבה",
+   "image": "assets/players/israeli-premier-league/il-060-דאגלס_דה_סילבה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-061-דדי_בן_דיין",
+   "name": "דדי בן דיין",
+   "image": "assets/players/israeli-premier-league/il-061-דדי_בן_דיין.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 66
+    }
+   ]
+  },
+  {
+   "id": "il-062-דוד_אמסלם_-כדורגלן",
+   "name": "דוד אמסלם",
+   "image": "assets/players/israeli-premier-league/il-062-דוד_אמסלם_-כדורגלן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 33
+    }
+   ]
+  },
+  {
+   "id": "il-063-אברהם_גרנט",
+   "name": "אברהם גרנט",
+   "image": "assets/players/israeli-premier-league/il-063-אברהם_גרנט.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-064-דודו_אוואט",
+   "name": "דודו אוואט",
+   "image": "assets/players/israeli-premier-league/il-064-דודו_אוואט.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-065-דודו_ביטון",
+   "name": "דודו ביטון",
+   "image": "assets/players/israeli-premier-league/il-065-דודו_ביטון.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 66
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 33
+    }
+   ]
+  },
+  {
+   "id": "il-066-דודו_דהאן",
+   "name": "דודו דהאן",
+   "image": "assets/players/israeli-premier-league/il-066-דודו_דהאן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-067-דור_אלו",
+   "name": "דור אלו",
+   "image": "assets/players/israeli-premier-league/il-067-דור_אלו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-068-דור_חוגי",
+   "name": "דור חוגי",
+   "image": "assets/players/israeli-premier-league/il-068-דור_חוגי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 33
+    }
+   ]
+  },
+  {
+   "id": "il-069-דור_כוכב",
+   "name": "דור כוכב",
+   "image": "assets/players/israeli-premier-league/il-069-דור_כוכב.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-070-דיוגו_ורדשקה",
+   "name": "דיוגו ורדשקה",
+   "image": "assets/players/israeli-premier-league/il-070-דיוגו_ורדשקה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-071-דינו_אנדלובו",
+   "name": "דינו אנדלובו",
+   "image": "assets/players/israeli-premier-league/il-071-דינו_אנדלובו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-072-דן_איינבינדר",
+   "name": "דן איינבינדר",
+   "image": "assets/players/israeli-premier-league/il-072-דן_איינבינדר.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 36
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 27
+    }
+   ]
+  },
+  {
+   "id": "il-073-דניאל_פרץ",
+   "name": "דניאל פרץ",
+   "image": "assets/players/israeli-premier-league/il-073-דניאל_פרץ.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-074-דן_ביטון_-כדורגלן",
+   "name": "דן ביטון",
+   "image": "assets/players/israeli-premier-league/il-074-דן_ביטון_-כדורגלן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-075-דני_איימוס",
+   "name": "דני איימוס",
+   "image": "assets/players/israeli-premier-league/il-075-דני_איימוס.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-076-דני_הוצ-קו",
+   "name": "דני הוצ'קו",
+   "image": "assets/players/israeli-premier-league/il-076-דני_הוצ-קו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-077-דניאל_בריילובסקי",
+   "name": "דניאל בריילובסקי",
+   "image": "assets/players/israeli-premier-league/il-077-דניאל_בריילובסקי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-078-דניאל_דה_רידר",
+   "name": "דניאל דה רידר",
+   "image": "assets/players/israeli-premier-league/il-078-דניאל_דה_רידר.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-079-דניאל_הבר",
+   "name": "דניאל הבר",
+   "image": "assets/players/israeli-premier-league/il-079-דניאל_הבר.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-080-דניאל_פרץ_-2000",
+   "name": "דניאל פרץ",
+   "image": "assets/players/israeli-premier-league/il-080-דניאל_פרץ_-2000.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-081-דניל_לסובוי",
+   "name": "דניל לסובוי",
+   "image": "assets/players/israeli-premier-league/il-081-דניל_לסובוי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-082-דנילו_אספרייה",
+   "name": "דנילו אספרייה",
+   "image": "assets/players/israeli-premier-league/il-082-דנילו_אספרייה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-083-דרק_בואטנג",
+   "name": "דרק בואטנג",
+   "image": "assets/players/israeli-premier-league/il-083-דרק_בואטנג.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-084-וינסנט_אניימה",
+   "name": "וינסנט אניימה",
+   "image": "assets/players/israeli-premier-league/il-084-וינסנט_אניימה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 40
+    }
+   ]
+  },
+  {
+   "id": "il-085-ז-והאן_אודל",
+   "name": "ז'והאן אודל",
+   "image": "assets/players/israeli-premier-league/il-085-ז-והאן_אודל.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-086-ז-ורז-יניו_-1991",
+   "name": "ז'ורז'יניו",
+   "image": "assets/players/israeli-premier-league/il-086-ז-ורז-יניו_-1991.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-087-זאב_חיימוביץ",
+   "name": "זאב חיימוביץ'",
+   "image": "assets/players/israeli-premier-league/il-087-זאב_חיימוביץ.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 66
+    }
+   ]
+  },
+  {
+   "id": "il-088-חיים_מגרלשוילי",
+   "name": "חיים מגרלשוילי",
+   "image": "",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 33
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 16
+    }
+   ]
+  },
+  {
+   "id": "il-089-חסן_אבו_זייד",
+   "name": "חסן אבו זייד",
+   "image": "assets/players/israeli-premier-league/il-089-חסן_אבו_זייד.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 25
+    }
+   ]
+  },
+  {
+   "id": "il-090-חסן_בדג-ייב",
+   "name": "חסן בדג'ייב",
+   "image": "assets/players/israeli-premier-league/il-090-חסן_בדג-ייב.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-091-טל_בן-חיים_-1982",
+   "name": "טל בן-חיים",
+   "image": "assets/players/israeli-premier-league/il-091-טל_בן-חיים_-1982.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 57
+    }
+   ]
+  },
+  {
+   "id": "il-092-טל_בן-חיים_-1989",
+   "name": "טל בן-חיים",
+   "image": "assets/players/israeli-premier-league/il-092-טל_בן-חיים_-1989.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 25
+    }
+   ]
+  },
+  {
+   "id": "il-093-יואב_ג-ראפי",
+   "name": "יואב ג'ראפי",
+   "image": "assets/players/israeli-premier-league/il-093-יואב_ג-ראפי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-094-יואב_זיו",
+   "name": "יואב זיו",
+   "image": "assets/players/israeli-premier-league/il-094-יואב_זיו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 71
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 28
+    }
+   ]
+  },
+  {
+   "id": "il-095-יוחנן_וולך",
+   "name": "יוחנן וולך",
+   "image": "assets/players/israeli-premier-league/il-095-יוחנן_וולך.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-096-יונתן_כהן",
+   "name": "יונתן כהן",
+   "image": "assets/players/israeli-premier-league/il-096-יונתן_כהן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-097-יוסי_אבוקסיס",
+   "name": "יוסי אבוקסיס",
+   "image": "assets/players/israeli-premier-league/il-097-יוסי_אבוקסיס.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 43
+    }
+   ]
+  },
+  {
+   "id": "il-098-יוריס_ואן_אובריים",
+   "name": "יוריס ואן אובריים",
+   "image": "assets/players/israeli-premier-league/il-098-יוריס_ואן_אובריים.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-099-יניב_בריק",
+   "name": "יניב בריק",
+   "image": "assets/players/israeli-premier-league/il-099-יניב_בריק.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-100-יעקב_אסייג",
+   "name": "יעקב אסייג",
+   "image": "assets/players/israeli-premier-league/il-100-יעקב_אסייג.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-101-ירו_בלו",
+   "name": "ירו בלו",
+   "image": "assets/players/israeli-premier-league/il-101-ירו_בלו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-102-ירוסלב_באקו",
+   "name": "ירוסלב באקו",
+   "image": "assets/players/israeli-premier-league/il-102-ירוסלב_באקו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-103-כפיר_אדרי",
+   "name": "כפיר אדרי",
+   "image": "assets/players/israeli-premier-league/il-103-כפיר_אדרי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "impossible",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 50
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 50
+    }
+   ]
+  },
+  {
+   "id": "il-104-כפיר_אודי",
+   "name": "כפיר אודי",
+   "image": "assets/players/israeli-premier-league/il-104-כפיר_אודי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-105-כריסטיאן_אלברס",
+   "name": "כריסטיאן אלברס",
+   "image": "assets/players/israeli-premier-league/il-105-כריסטיאן_אלברס.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-106-לואיס_הרננדס_רודריגס",
+   "name": "לואיס הרננדס רודריגס",
+   "image": "assets/players/israeli-premier-league/il-106-לואיס_הרננדס_רודריגס.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-107-ליאור_אסולין",
+   "name": "ליאור אסולין",
+   "image": "assets/players/israeli-premier-league/il-107-ליאור_אסולין.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 66
+    }
+   ]
+  },
+  {
+   "id": "il-108-ליביו_אנטל",
+   "name": "ליביו אנטל",
+   "image": "assets/players/israeli-premier-league/il-108-ליביו_אנטל.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 33
+    }
+   ]
+  },
+  {
+   "id": "il-109-ליוואי_גארסיה",
+   "name": "ליוואי גארסיה",
+   "image": "assets/players/israeli-premier-league/il-109-ליוואי_גארסיה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-110-מאור_בוזגלו",
+   "name": "מאור בוזגלו",
+   "image": "assets/players/israeli-premier-league/il-110-מאור_בוזגלו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 66
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 33
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 33
+    }
+   ]
+  },
+  {
+   "id": "il-111-מארק_ואליינטה",
+   "name": "מארק ואליינטה",
+   "image": "assets/players/israeli-premier-league/il-111-מארק_ואליינטה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-112-מואנס_דבור",
+   "name": "מואנס דבור",
+   "image": "assets/players/israeli-premier-league/il-112-מואנס_דבור.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-113-מוחמד_אבו_פאני",
+   "name": "מוחמד אבו פאני",
+   "image": "assets/players/israeli-premier-league/il-113-מוחמד_אבו_פאני.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-114-מוחמד_גדיר",
+   "name": "מוחמד גדיר",
+   "image": "assets/players/israeli-premier-league/il-114-מוחמד_גדיר.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-115-מוחמד_כליבאת",
+   "name": "מוחמד כליבאת",
+   "image": "assets/players/israeli-premier-league/il-115-מוחמד_כליבאת.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-116-מוטי_איוניר",
+   "name": "מוטי איוניר",
+   "image": "assets/players/israeli-premier-league/il-116-מוטי_איוניר.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 14
+    }
+   ]
+  },
+  {
+   "id": "il-117-מוטי_ברשצקי",
+   "name": "מוטי ברשצקי",
+   "image": "assets/players/israeli-premier-league/il-117-מוטי_ברשצקי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-118-מיכאיל_אוסינוב",
+   "name": "מיכאיל אוסינוב",
+   "image": "assets/players/israeli-premier-league/il-118-מיכאיל_אוסינוב.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-119-מיכאל_זנדברג",
+   "name": "מיכאל זנדברג",
+   "image": "assets/players/israeli-premier-league/il-119-מיכאל_זנדברג.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 80
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 40
+    }
+   ]
+  },
+  {
+   "id": "il-120-מיקאל_אלפונס",
+   "name": "מיקאל אלפונס",
+   "image": "assets/players/israeli-premier-league/il-120-מיקאל_אלפונס.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-121-מיקו_בלו",
+   "name": "מיקו בלו",
+   "image": "assets/players/israeli-premier-league/il-121-מיקו_בלו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-122-מני_בסון",
+   "name": "מני בסון",
+   "image": "assets/players/israeli-premier-league/il-122-מני_בסון.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-123-מקסים_גרצ-קין",
+   "name": "מקסים גרצ'קין",
+   "image": "assets/players/israeli-premier-league/il-123-מקסים_גרצ-קין.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-124-מרלון_דה_חסוס",
+   "name": "מרלון דה חסוס",
+   "image": "assets/players/israeli-premier-league/il-124-מרלון_דה_חסוס.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-125-מרקו_יאנקוביץ",
+   "name": "מרקו יאנקוביץ'",
+   "image": "assets/players/israeli-premier-league/il-125-מרקו_יאנקוביץ.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-126-משה_בן_לולו",
+   "name": "משה בן לולו",
+   "image": "assets/players/israeli-premier-league/il-126-משה_בן_לולו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-127-מתן_אוחיון",
+   "name": "מתן אוחיון",
+   "image": "assets/players/israeli-premier-league/il-127-מתן_אוחיון.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-128-נטע_לביא",
+   "name": "נטע לביא",
+   "image": "assets/players/israeli-premier-league/il-128-נטע_לביא.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-129-ניב_זריהן",
+   "name": "ניב זריהן",
+   "image": "assets/players/israeli-premier-league/il-129-ניב_זריהן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-130-ניר_דוידוביץ",
+   "name": "ניר דוידוביץ'",
+   "image": "assets/players/israeli-premier-league/il-130-ניר_דוידוביץ.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-131-סטיב_גורי",
+   "name": "סטיב גורי",
+   "image": "assets/players/israeli-premier-league/il-131-סטיב_גורי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-132-סטפנוס_אתנסיאדיס",
+   "name": "סטפנוס אתנסיאדיס",
+   "image": "assets/players/israeli-premier-league/il-132-סטפנוס_אתנסיאדיס.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-133-עאיד_חבשי",
+   "name": "עאיד חבשי",
+   "image": "assets/players/israeli-premier-league/il-133-עאיד_חבשי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-134-עדן_בן_בסט",
+   "name": "עדן בן בסט",
+   "image": "assets/players/israeli-premier-league/il-134-עדן_בן_בסט.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "impossible",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 66
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 16
+    }
+   ]
+  },
+  {
+   "id": "il-135-עודד_בלוש",
+   "name": "עודד בלוש",
+   "image": "assets/players/israeli-premier-league/il-135-עודד_בלוש.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-136-עומר_אצילי",
+   "name": "עומר אצילי",
+   "image": "assets/players/israeli-premier-league/il-136-עומר_אצילי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 75
+    }
+   ]
+  },
+  {
+   "id": "il-137-עומר_בוקסנבוים",
+   "name": "עומר בוקסנבוים",
+   "image": "assets/players/israeli-premier-league/il-137-עומר_בוקסנבוים.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-138-עומר_דמארי",
+   "name": "עומר דמארי",
+   "image": "assets/players/israeli-premier-league/il-138-עומר_דמארי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 50
+    }
+   ]
+  },
+  {
+   "id": "il-139-עומרי_גלזר",
+   "name": "עומרי גלזר",
+   "image": "assets/players/israeli-premier-league/il-139-עומרי_גלזר.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-140-עופר_טלקר",
+   "name": "עופר טלקר",
+   "image": "assets/players/israeli-premier-league/il-140-עופר_טלקר.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-141-עידן_ורד",
+   "name": "עידן ורד",
+   "image": "assets/players/israeli-premier-league/il-141-עידן_ורד.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 60
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 30
+    }
+   ]
+  },
+  {
+   "id": "il-142-עידן_טל",
+   "name": "עידן טל",
+   "image": "assets/players/israeli-premier-league/il-142-עידן_טל.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 80
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 20
+    }
+   ]
+  },
+  {
+   "id": "il-143-עמית_ביטון",
+   "name": "עמית ביטון",
+   "image": "assets/players/israeli-premier-league/il-143-עמית_ביטון.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-144-עמרי_אפק",
+   "name": "עמרי אפק",
+   "image": "assets/players/israeli-premier-league/il-144-עמרי_אפק.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 60
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 60
+    }
+   ]
+  },
+  {
+   "id": "il-145-ערן_לוי_-כדורגלן",
+   "name": "ערן לוי",
+   "image": "assets/players/israeli-premier-league/il-145-ערן_לוי_-כדורגלן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 25
+    }
+   ]
+  },
+  {
+   "id": "il-146-פבלו_ברנדאן",
+   "name": "פבלו ברנדאן",
+   "image": "assets/players/israeli-premier-league/il-146-פבלו_ברנדאן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-147-פטריק_טומאסי",
+   "name": "פטריק טומאסי",
+   "image": "assets/players/israeli-premier-league/il-147-פטריק_טומאסי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-148-פלמן_גלבוב",
+   "name": "פלמן גלבוב",
+   "image": "assets/players/israeli-premier-league/il-148-פלמן_גלבוב.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-149-צ-יקו_אופואדו",
+   "name": "צ'יקו אופואדו",
+   "image": "assets/players/israeli-premier-league/il-149-צ-יקו_אופואדו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-150-צבי_ארליך",
+   "name": "צבי ארליך",
+   "image": "assets/players/israeli-premier-league/il-150-צבי_ארליך.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-151-קייס_גאנם",
+   "name": "קייס גאנם",
+   "image": "assets/players/israeli-premier-league/il-151-קייס_גאנם.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-152-קמיל_ואצק",
+   "name": "קמיל ואצק",
+   "image": "assets/players/israeli-premier-league/il-152-קמיל_ואצק.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-153-קרלוס_גרסיה",
+   "name": "קרלוס גרסיה",
+   "image": "assets/players/israeli-premier-league/il-153-קרלוס_גרסיה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-154-רביד_גזל",
+   "name": "רביד גזל",
+   "image": "assets/players/israeli-premier-league/il-154-רביד_גזל.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 50
+    }
+   ]
+  },
+  {
+   "id": "il-155-רדובן_הרומאדקו",
+   "name": "רדובן הרומאדקו",
+   "image": "assets/players/israeli-premier-league/il-155-רדובן_הרומאדקו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-156-רונאלדו_ואסקס",
+   "name": "רונאלדו ואסקס",
+   "image": "assets/players/israeli-premier-league/il-156-רונאלדו_ואסקס.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-157-רוני_לוי",
+   "name": "רוני לוי",
+   "image": "assets/players/israeli-premier-league/il-157-רוני_לוי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-158-רועי_גורדנה",
+   "name": "רועי גורדנה",
+   "image": "assets/players/israeli-premier-league/il-158-רועי_גורדנה.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-159-רז_מאיר",
+   "name": "רז מאיר",
+   "image": "assets/players/israeli-premier-league/il-159-רז_מאיר.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 10
+    }
+   ]
+  },
+  {
+   "id": "il-160-ריצ-מונד_בואצ-י",
+   "name": "ריצ'מונד בואצ'י",
+   "image": "assets/players/israeli-premier-league/il-160-ריצ-מונד_בואצ-י.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-161-רמי_אבו_לבן",
+   "name": "רמי אבו לבן",
+   "image": "assets/players/israeli-premier-league/il-161-רמי_אבו_לבן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-162-רן_אבוקרט",
+   "name": "רן אבוקרט",
+   "image": "assets/players/israeli-premier-league/il-162-רן_אבוקרט.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-163-רן_בנימין",
+   "name": "רן בנימין",
+   "image": "assets/players/israeli-premier-league/il-163-רן_בנימין.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-164-רפי_אוסמו",
+   "name": "רפי אוסמו",
+   "image": "assets/players/israeli-premier-league/il-164-רפי_אוסמו.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-165-שאבייר_אנדרסון",
+   "name": "שאבייר אנדרסון",
+   "image": "assets/players/israeli-premier-league/il-165-שאבייר_אנדרסון.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-166-שביט_אלימלך",
+   "name": "שביט אלימלך",
+   "image": "assets/players/israeli-premier-league/il-166-שביט_אלימלך.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 38
+    }
+   ]
+  },
+  {
+   "id": "il-167-שולי_גילארדי",
+   "name": "שולי גילארדי",
+   "image": "assets/players/israeli-premier-league/il-167-שולי_גילארדי.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-168-שון_גולדברג",
+   "name": "שון גולדברג",
+   "image": "assets/players/israeli-premier-league/il-168-שון_גולדברג.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 40
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 20
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 20
+    }
+   ]
+  },
+  {
+   "id": "il-169-שון_וייסמן",
+   "name": "שון וייסמן",
+   "image": "assets/players/israeli-premier-league/il-169-שון_וייסמן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-170-שחר_הירש",
+   "name": "שחר הירש",
+   "image": "assets/players/israeli-premier-league/il-170-שחר_הירש.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 66
+    }
+   ]
+  },
+  {
+   "id": "il-171-שי_אליאס",
+   "name": "שי אליאס",
+   "image": "assets/players/israeli-premier-league/il-171-שי_אליאס.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-172-שי_הולצמן",
+   "name": "שי הולצמן",
+   "image": "assets/players/israeli-premier-league/il-172-שי_הולצמן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-173-שלום_אביטן",
+   "name": "שלום אביטן",
+   "image": "assets/players/israeli-premier-league/il-173-שלום_אביטן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 66
+    }
+   ]
+  },
+  {
+   "id": "il-174-שלומי_אזולאי_-קשר",
+   "name": "שלומי אזולאי",
+   "image": "assets/players/israeli-premier-league/il-174-שלומי_אזולאי_-קשר.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "impossible",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 42
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 42
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 28
+    }
+   ]
+  },
+  {
+   "id": "il-175-שלומי_ארבייטמן",
+   "name": "שלומי ארבייטמן",
+   "image": "assets/players/israeli-premier-league/il-175-שלומי_ארבייטמן.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 33
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 16
+    }
+   ]
+  },
+  {
+   "id": "il-176-שמעון_גרשון",
+   "name": "שמעון גרשון",
+   "image": "assets/players/israeli-premier-league/il-176-שמעון_גרשון.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 45
+    }
+   ]
+  },
+  {
+   "id": "il-177-שרן_ייני",
+   "name": "שרן ייני",
+   "image": "assets/players/israeli-premier-league/il-177-שרן_ייני.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-178-תום_אלמדון",
+   "name": "תום אלמדון",
+   "image": "assets/players/israeli-premier-league/il-178-תום_אלמדון.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "hard",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 40
+    }
+   ]
+  }
+ ]
+}

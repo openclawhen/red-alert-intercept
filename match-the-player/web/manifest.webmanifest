@@ -1,0 +1,13 @@
+{
+  "name": "Match The Player",
+  "short_name": "MatchThePlayer",
+  "description": "Guess which club a footballer really belongs to.",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#05070d",
+  "theme_color": "#05070d",
+  "icons": [
+    { "src": "assets/ui/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

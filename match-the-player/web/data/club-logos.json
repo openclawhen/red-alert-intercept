@@ -1,0 +1,4 @@
+{
+  "_readme": "Real club crests are NOT bundled with this project. To use one: save it as assets/clubs/<club id>.png (square, ideally 128x128, transparent background) and add that club id to the list below. Anything not listed falls back to a neutral colour monogram. Only add artwork you have the right to use.",
+  "clubs": []
+}

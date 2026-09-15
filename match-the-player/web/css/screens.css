@@ -1,0 +1,178 @@
+/* ==========================================================================
+   screens.css - home, league picker, difficulty picker, game over, records
+   ========================================================================== */
+
+/* ---------- HOME ---------------------------------------------------------- */
+.screen--home { justify-content: center; gap: 26px; text-align: center; }
+.home__top { margin-top: 8px; }
+
+.brand { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.brand__mark { width: 66px; height: 66px; filter: drop-shadow(0 8px 22px rgba(0, 255, 157, 0.28)); }
+.brand__mark svg { width: 100%; height: 100%; }
+.ball-base { fill: #f4f7ff; }
+.ball-mark { fill: #0b1220; }
+
+.brand__title {
+  font-size: clamp(1.9rem, 9.4vw, 2.6rem);
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  line-height: 1;
+  background: linear-gradient(180deg, #ffffff 30%, #9fb2d6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.brand__title span { color: var(--accent); -webkit-text-fill-color: var(--accent); margin: 0 0.16em; }
+.brand__tag { color: var(--text-faint); font-size: 0.86rem; letter-spacing: 0.02em; }
+
+.home__stats { display: grid; grid-template-columns: repeat(3, 1fr); padding: 18px 10px; }
+.home__stats .stat + .stat { border-left: 1px solid var(--stroke-soft); }
+
+.home__actions { display: flex; flex-direction: column; gap: 10px; }
+.home__row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.home__footnote { color: var(--text-faint); font-size: 0.72rem; opacity: 0.7; }
+
+/* ---------- PICKER SCREENS ------------------------------------------------ */
+.screen--pick { justify-content: flex-start; }
+
+.league-grid { display: flex; flex-direction: column; gap: 12px; }
+
+.league-card {
+  --card-accent: var(--accent);
+  position: relative;
+  display: flex; align-items: center; gap: 14px;
+  width: 100%;
+  padding: 15px 16px;
+  border-radius: var(--radius-m);
+  border: 1px solid var(--stroke);
+  background: var(--panel);
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 150ms ease, border-color 180ms ease, background 180ms ease;
+}
+.league-card::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(100deg, color-mix(in srgb, var(--card-accent) 16%, transparent), transparent 62%);
+  opacity: 0; transition: opacity 200ms ease;
+  pointer-events: none;
+}
+.league-card:hover::after, .league-card.is-selected::after { opacity: 1; }
+.league-card.is-selected { border-color: var(--card-accent); }
+.league-card:active { transform: scale(0.985); }
+.league-card[disabled] { opacity: 0.42; cursor: default; }
+
+.league-card__emblem {
+  width: 46px; height: 46px; flex: 0 0 auto;
+  display: grid; place-items: center;
+  font-size: 1.45rem;
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--card-accent) 14%, rgba(255,255,255,.04));
+  border: 1px solid color-mix(in srgb, var(--card-accent) 26%, transparent);
+}
+.league-card__body { flex: 1; min-width: 0; }
+.league-card__name { display: block; font-weight: 800; font-size: 1rem; letter-spacing: -0.015em; }
+.league-card__meta { display: block; color: var(--text-faint); font-size: 0.76rem; }
+.league-card__tag {
+  flex: 0 0 auto;
+  font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.09em;
+  padding: 4px 8px; border-radius: 7px;
+  background: rgba(255,255,255,.06); color: var(--text-faint);
+}
+.league-card__tag--live { background: color-mix(in srgb, var(--card-accent) 20%, transparent); color: var(--card-accent); }
+
+/* ---------- DIFFICULTY ---------------------------------------------------- */
+.difficulty-list { display: flex; flex-direction: column; gap: 11px; }
+
+.diff-card {
+  --diff: var(--accent);
+  position: relative;
+  width: 100%;
+  padding: 14px 16px;
+  display: flex; align-items: center; gap: 13px;
+  border-radius: var(--radius-m);
+  border: 1px solid var(--stroke);
+  background: var(--panel);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 150ms ease, border-color 180ms ease;
+}
+.diff-card:active { transform: scale(0.985); }
+.diff-card.is-selected {
+  border-color: var(--diff);
+  box-shadow: 0 0 0 1px var(--diff), 0 12px 30px -18px var(--diff);
+}
+.diff-card__dot {
+  width: 10px; height: 10px; border-radius: 50%; flex: 0 0 auto;
+  background: var(--diff);
+  box-shadow: 0 0 10px var(--diff);
+}
+.diff-card__body { flex: 1; min-width: 0; }
+.diff-card__name { display: block; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; font-size: 0.9rem; }
+.diff-card__desc { display: block; color: var(--text-faint); font-size: 0.78rem; line-height: 1.3; }
+.diff-card__count { flex: 0 0 auto; font-size: 0.7rem; color: var(--text-faint); font-variant-numeric: tabular-nums; }
+
+.mode-block { display: flex; flex-direction: column; gap: 9px; }
+.mode-block__title { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-faint); }
+.mode-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.mode-chip {
+  padding: 9px 14px; border-radius: 999px;
+  border: 1px solid var(--stroke); background: var(--panel);
+  color: var(--text-dim); font-size: 0.82rem; font-weight: 700;
+  cursor: pointer; transition: all 160ms ease;
+}
+.mode-chip.is-selected { background: var(--accent); color: #04110c; border-color: transparent; }
+.mode-chip[disabled] { opacity: 0.35; cursor: default; }
+.mode-chips__hint { font-size: 0.77rem; color: var(--text-faint); min-height: 1.2em; }
+
+.screen--pick > .btn--xl { margin-top: auto; }
+
+/* ---------- GAME OVER ----------------------------------------------------- */
+.screen--over { justify-content: center; }
+.over__panel { padding: 30px 22px 24px; text-align: center; display: flex; flex-direction: column; gap: 18px; }
+.over__eyebrow { text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.7rem; color: var(--text-faint); font-weight: 800; }
+.over__score {
+  font-size: clamp(3rem, 20vw, 4.4rem);
+  font-weight: 900; letter-spacing: -0.05em; line-height: 0.95;
+  font-variant-numeric: tabular-nums;
+  background: linear-gradient(180deg, #ffffff 25%, var(--accent) 130%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.over__new-best {
+  align-self: center;
+  font-size: 0.76rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--warn);
+  padding: 5px 12px; border-radius: 999px;
+  background: rgba(255, 194, 75, 0.12); border: 1px solid rgba(255, 194, 75, 0.3);
+  animation: pop 420ms cubic-bezier(.2,1.4,.4,1) both;
+}
+.over__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.over__context { color: var(--text-faint); font-size: 0.78rem; }
+.over__actions { display: flex; flex-direction: column; gap: 10px; }
+
+@keyframes pop { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+/* ---------- RECORDS ------------------------------------------------------- */
+.scores-list { display: flex; flex-direction: column; gap: 9px; }
+.score-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 13px 15px;
+  border-radius: var(--radius-m);
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+}
+.score-row__emblem { font-size: 1.2rem; }
+.score-row__body { flex: 1; min-width: 0; }
+.score-row__league { display: block; font-weight: 700; font-size: 0.9rem; }
+.score-row__diff { display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-faint); }
+.score-row__value { font-weight: 900; font-size: 1.15rem; font-variant-numeric: tabular-nums; color: var(--accent); }
+.scores-empty { color: var(--text-faint); font-size: 0.88rem; text-align: center; padding: 30px 0; }
+.scores-list + .btn { margin-top: auto; }
+
+/* ---------- Larger screens ------------------------------------------------ */
+@media (min-width: 720px) {
+  .app { max-width: 620px; padding-left: 24px; padding-right: 24px; }
+  .league-grid { display: grid; grid-template-columns: 1fr 1fr; }
+  .difficulty-list { gap: 12px; }
+}
