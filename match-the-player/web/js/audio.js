@@ -61,6 +61,51 @@ function blip({ freq = 440, type = 'sine', duration = 0.14, gain = 0.25, slideTo
   osc.stop(t0 + duration + 0.02);
 }
 
+/* ---------- noise, the raw material for crowds and whistles ---------------- */
+
+let noiseBuffer = null;
+
+function getNoise() {
+  const c = ensureContext();
+  if (!c) return null;
+  if (noiseBuffer) return noiseBuffer;
+  const length = c.sampleRate * 2;
+  noiseBuffer = c.createBuffer(1, length, c.sampleRate);
+  const data = noiseBuffer.getChannelData(0);
+  for (let i = 0; i < length; i += 1) data[i] = Math.random() * 2 - 1;
+  return noiseBuffer;
+}
+
+/** A band of filtered noise - a crowd swell, a ball on the net, a whistle's air. */
+function noise({ duration = 0.5, gain = 0.2, freq = 900, q = 1, type = 'bandpass', delay = 0, sweepTo = null }) {
+  const c = ensureContext();
+  if (!c || muted || !master) return;
+  const buffer = getNoise();
+  if (!buffer) return;
+  const t0 = c.currentTime + delay;
+
+  const src = c.createBufferSource();
+  src.buffer = buffer;
+  src.loop = true;
+
+  const filter = c.createBiquadFilter();
+  filter.type = type;
+  filter.frequency.setValueAtTime(freq, t0);
+  filter.Q.value = q;
+  if (sweepTo) filter.frequency.exponentialRampToValueAtTime(sweepTo, t0 + duration);
+
+  const env = c.createGain();
+  env.gain.setValueAtTime(0.0001, t0);
+  env.gain.exponentialRampToValueAtTime(gain, t0 + duration * 0.18);
+  env.gain.exponentialRampToValueAtTime(0.0001, t0 + duration);
+
+  src.connect(filter);
+  filter.connect(env);
+  env.connect(master);
+  src.start(t0);
+  src.stop(t0 + duration + 0.05);
+}
+
 /* ---------- the game's sound palette -------------------------------------- */
 
 export const sfx = {
@@ -68,13 +113,28 @@ export const sfx = {
     blip({ freq: 520, type: 'triangle', duration: 0.07, gain: 0.14 });
   },
 
-  /** Rising arpeggio - climbs higher the longer the streak runs. */
+  /**
+   * Rising arpeggio that climbs with the streak, over the snap of a ball hitting
+   * the net - and, once the streak is really going, a crowd swell behind it.
+   */
   correct(streak = 0) {
     const step = Math.min(streak, 8);
     const base = 523.25 * Math.pow(2, step / 24);
     [0, 0.06, 0.12].forEach((delay, i) => {
       blip({ freq: base * [1, 1.26, 1.5][i], type: 'triangle', duration: 0.18, gain: 0.2, delay });
     });
+    noise({ duration: 0.16, gain: 0.1, freq: 2600, q: 0.7, sweepTo: 900 });   // the net
+    if (streak >= 3) {
+      noise({ duration: 0.9 + step * 0.06, gain: 0.05 + step * 0.008, freq: 700, q: 0.5, delay: 0.1 });
+    }
+  },
+
+  /** The referee's whistle, for kick-off and full time. */
+  whistle(long = false) {
+    const duration = long ? 0.75 : 0.32;
+    noise({ duration, gain: 0.12, freq: 2400, q: 14, delay: 0 });
+    blip({ freq: 2350, type: 'sine', duration, gain: 0.1 });
+    blip({ freq: 3150, type: 'sine', duration, gain: 0.05 });
   },
 
   partial() {
@@ -84,12 +144,15 @@ export const sfx = {
 
   wrong() {
     blip({ freq: 196, type: 'sawtooth', duration: 0.3, gain: 0.18, slideTo: 90 });
+    noise({ duration: 0.6, gain: 0.05, freq: 320, q: 0.6, type: 'lowpass' });   // the groan
   },
 
   gameOver() {
+    this.whistle(true);
     [523.25, 415.3, 349.23, 261.63].forEach((freq, i) => {
-      blip({ freq, type: 'triangle', duration: 0.34, gain: 0.18, delay: i * 0.13 });
+      blip({ freq, type: 'triangle', duration: 0.34, gain: 0.18, delay: 0.5 + i * 0.13 });
     });
+    noise({ duration: 1.6, gain: 0.06, freq: 620, q: 0.5, delay: 0.45 });
   },
 
   /** Ticking urgency in the last seconds. */
@@ -134,6 +197,34 @@ function startMusic() {
   });
 
   filter.connect(musicGain);
+
+  // a distant crowd under the pad, so the bed sounds like a ground and not a synth
+  const crowd = getNoise();
+  if (crowd) {
+    const src = c.createBufferSource();
+    src.buffer = crowd;
+    src.loop = true;
+    const band = c.createBiquadFilter();
+    band.type = 'bandpass';
+    band.frequency.value = 560;
+    band.Q.value = 0.5;
+    const level = c.createGain();
+    level.gain.value = 0.5;
+    // slow swells, the way a crowd breathes
+    const swell = c.createOscillator();
+    const swellGain = c.createGain();
+    swell.frequency.value = 0.07;
+    swellGain.gain.value = 0.3;
+    swell.connect(swellGain);
+    swellGain.connect(level.gain);
+    swell.start();
+    src.connect(band);
+    band.connect(level);
+    level.connect(musicGain);
+    src.start();
+    musicNodes.push(src, swell);
+  }
+
   musicGain.connect(master);
   musicNodes.push(lfo);
 }

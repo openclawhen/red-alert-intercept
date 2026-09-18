@@ -9,6 +9,7 @@ import { initGame, startGame, stopGame } from './game.js';
 import { initArena, startArena, stopArena } from './arena.js';
 import { openClassic } from './classic.js';
 import { escapeHtml, dirFor } from './components.js';
+import { icon } from './art.js';
 import { store } from './storage.js';
 import { sfx, setMuted, isMuted, setMusic, unlock } from './audio.js';
 
@@ -69,6 +70,9 @@ async function boot() {
     clock: $('#arena-clock'),
     streak: $('#arena-cards-count'),
   }, logoSet, showGameOver);
+
+  // fill every icon slot from the drawn set
+  $$('[data-icon]').forEach((node) => { node.innerHTML = icon(node.dataset.icon, { size: 20 }); });
 
   setMuted(store.get('muted'));
   renderSoundToggle();
@@ -405,7 +409,8 @@ function renderSoundToggle() {
   const button = $('#sound-toggle');
   const muted = isMuted();
   button.classList.toggle('is-muted', muted);
-  button.querySelector('.sound-toggle__icon').textContent = muted ? '🔇' : (store.get('music') ? '🎵' : '🔊');
+  button.querySelector('.sound-toggle__icon').innerHTML =
+    icon(muted ? 'muted' : 'sound', { size: 19 });
   button.setAttribute('aria-label', muted ? 'Unmute' : 'Mute');
   button.title = muted ? 'Sound off — tap to unmute' : 'Sound on — long-press for music';
 }

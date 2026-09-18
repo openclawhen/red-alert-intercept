@@ -78,6 +78,31 @@
   from { opacity: 0; transform: translateY(16px) scale(0.96); }
   to   { opacity: 1; transform: none; }
 }
+.player-card__tier {
+  position: absolute;
+  top: 10px; left: 12px;
+  z-index: 3;
+  font-size: 0.55rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--metal-a);
+  opacity: 0.85;
+}
+/* the frame takes the colour of the tier: bronze, silver, gold */
+.player-card::after {
+  content: "";
+  position: absolute; inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(150deg, var(--metal-a), transparent 38%, transparent 62%, var(--metal-b));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
 .player-card::before {
   /* soft club-coloured wash behind the portrait */
   content: "";
@@ -115,25 +140,17 @@
   display: grid; place-items: center;
   position: relative;
 }
-.portrait-fallback__initials.is-masked { color: rgba(255, 255, 255, 0.35); }
-.portrait-fallback__initials {
-  position: relative; z-index: 2;
-  font-size: 2.6rem; font-weight: 900; letter-spacing: -0.05em;
-  color: rgba(255, 255, 255, 0.94);
-  text-shadow: 0 8px 26px rgba(0, 0, 0, 0.7);
-}
-.portrait-fallback__ring {
-  position: absolute;
-  width: 46%; aspect-ratio: 1;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: radial-gradient(circle at 50% 30%, rgba(255,255,255,.1), rgba(255,255,255,.02) 70%);
-  box-shadow: 0 10px 40px -12px rgba(0, 0, 0, 0.8);
-}
 .portrait-fallback::after {
   content: "";
   position: absolute; inset: 0;
-  background: radial-gradient(60% 50% at 50% 45%, rgba(255,255,255,.06), transparent 72%);
+  background: radial-gradient(62% 54% at 50% 46%, color-mix(in srgb, var(--metal-a) 16%, transparent), transparent 74%);
+  pointer-events: none;
+}
+.shirt-svg {
+  position: relative; z-index: 2;
+  width: 62%; height: auto;
+  max-height: 84%;
+  filter: drop-shadow(0 12px 26px rgba(0, 0, 0, 0.55));
 }
 
 .player-card__body { padding: 12px 4px 0; text-align: center; position: relative; }
@@ -217,23 +234,31 @@
 .club-option:active { transform: scale(0.96); }
 .club-option[disabled] { cursor: default; }
 .club-option__name {
-  font-size: 0.79rem; font-weight: 700; line-height: 1.15;
-  overflow-wrap: anywhere;
+  min-width: 0;
+  font-size: 0.76rem; font-weight: 700; line-height: 1.2;
+  /* break a long club name between lines, never inside the word */
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
   overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
 }
 
 /* Monogram badge - a neutral stand-in, NOT a club crest.
    Drop a real crest at assets/clubs/<id>.png and list the id in data/club-logos.json. */
 .club-badge {
-  width: 34px; height: 34px; flex: 0 0 auto;
-  border-radius: 10px;
+  flex: 0 0 auto;
   display: grid; place-items: center;
-  font-size: 0.62rem; font-weight: 900; letter-spacing: -0.01em;
-  border: 1px solid rgba(255,255,255,.16);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.22);
-  overflow: hidden;
+  line-height: 0;
 }
-.club-badge img { width: 100%; height: 100%; object-fit: contain; }
+.club-badge .badge-svg { filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.45)); }
+/* a real crest, once one has been added to assets/clubs/ */
+.club-badge--real {
+  width: 34px; height: 34px;
+  border-radius: 9px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.06);
+}
+.club-badge--real img { width: 100%; height: 100%; object-fit: contain; }
 
 .club-option.is-correct {
   border-color: var(--good);

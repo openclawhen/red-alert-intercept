@@ -29,7 +29,7 @@ python3 -m http.server 8000
 
 ```bash
 cd web
-npm test        # 37 checks over the rules and the player data
+npm test        # 39 checks over the rules, the player data and the artwork
 ```
 
 ## Moving this into the original repo

@@ -138,6 +138,40 @@ Nothing in the engine hard-codes a mode.
 
 ---
 
+## The art
+
+The game has no licence to show a club's real crest or a player's photograph,
+so rather than leave holes it ships a drawn system (`js/art.js`, all inline SVG,
+no extra requests):
+
+* **Club badges** — four crest silhouettes (shield, roundel, scudetto, hexagon)
+  picked from the club's id so a club always keeps the same one, tinted with its
+  colours and stamped with its short code. None of them copies a real crest.
+* **The shirt** — where a photograph would go, a shirt seen from the back with
+  the player's initials as the number. It reads as "we don't have his picture"
+  rather than as a guess at what he looks like. While the name is hidden on
+  Impossible, the shirt wears a question mark so the initials can't give it away.
+* **Card tiers** — the frame runs gold, silver and bronze for easy, hard and
+  impossible, the way football cards do.
+* **Icons** — one drawn set for lives, streak, combo, clock, sound and the rest,
+  so nothing leans on emoji.
+* **The stadium** — floodlight beams, a crowd of bokeh, mown stripes and the
+  centre circle, all in CSS and tinted with the league's accent.
+
+Real artwork drops in on top and these step aside: add a crest at
+`assets/clubs/<club id>.png` plus its id in `data/club-logos.json`, or point a
+player's `image` at a photograph.
+
+From the original project: `LOGO.png` is now the brand mark on the home screen,
+and `BOOTLOADING.png` — which the Pygame flow never actually showed — covers the
+moment the classic art loads.
+
+**Sound** is synthesised with the Web Audio API, so there is still not one audio
+file to download: a referee's whistle at kick-off and full time, the snap of a
+ball hitting the net on a correct answer, a crowd swell that grows with the
+streak, a groan for a miss, and a stadium bed of filtered noise under the
+ambient pad.
+
 ## Folder layout
 
 ```
@@ -158,6 +192,7 @@ web/
 │   ├── data.js                 loading, filtering, question building
 │   ├── components.js           player card / club badge renderers
 │   ├── config.js               difficulties, modes, scoring — the tuning knobs
+│   ├── art.js                  the drawn assets: badges, shirts, icons, tiers
 │   ├── audio.js                synthesised sound effects + ambient music
 │   └── storage.js              localStorage wrapper
 ├── data/
@@ -166,6 +201,7 @@ web/
 │   └── players/*.json          one file per league
 └── assets/
     ├── classic/                the original Pygame art, re-encoded to WebP
+    ├── ui/                     the game's logo, from the original project
     ├── fonts/                  nrkis.ttf and OzradCLM.otf, the original fonts
     ├── players/<league>/       player photos (lazy-loaded)
     ├── clubs/                  club crests — empty, see below
@@ -239,6 +275,9 @@ right to use.
   red = Hapoel Tel Aviv, green = Maccabi Haifa, blue = Maccabi Tel Aviv,
   yellow = Beitar Jerusalem.
 * **Every screen and every pixel of art**, in the Classic skin.
+* **The logo and the loading screen**, and 183 Israeli player photographs —
+  including six pulled out of the `images/blue|green|red|yellow` folders that the
+  Pygame version loaded but never displayed.
 * **Difficulty levels, high scores, the mute toggle, the rules screen.**
 
 Deliberately left behind: the GitHub Gist high-score board (it needed a personal
@@ -259,7 +298,7 @@ the Hebrew virtual keyboard are both still there — in the Classic skin.
 ## Tests
 
 ```bash
-npm test                      # 37 checks: the rules, the scoring, and the player data
+npm test                      # 39 checks: the rules, the scoring, and the player data
 ```
 
 `tests/engine.test.mjs` includes a block that pins the Original rules — 60

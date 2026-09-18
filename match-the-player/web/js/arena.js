@@ -18,6 +18,7 @@ import { SCORING, namesShown } from './config.js';
 import { createGame } from './engine.js';
 import { pickCorners, poolFor } from './data.js';
 import { clubBadge, dirFor, escapeHtml, initialsOf } from './components.js';
+import { icon } from './art.js';
 import { sfx } from './audio.js';
 import { store } from './storage.js';
 
@@ -63,6 +64,7 @@ export function startArena({ league, difficulty, mode, players }) {
   el.feedback.className = 'arena__burst';
 
   renderHud();
+  sfx.whistle();          // kick-off
   spawnCard();
 
   lastFrame = performance.now();
@@ -316,7 +318,8 @@ function burst(value, tone) {
 
 function renderHud() {
   el.score.textContent = game.state.score;
-  el.streak.textContent = `Cards ${game.state.asked}`;
+  el.streak.innerHTML = `${icon('target', { size: 13 })}<span>${game.state.asked}</span>`;
+  el.streak.setAttribute('aria-label', `Card ${game.state.asked}`);
 }
 
 function renderTimer() {
@@ -325,7 +328,9 @@ function renderTimer() {
   el.bar.style.transform = `scaleX(${ratio})`;
   el.bar.classList.toggle('is-low', ratio < 0.35);
   el.bar.classList.toggle('is-critical', ratio < 0.15);
-  el.clock.textContent = `${Math.ceil(s.timeLeft)}s`;
+  const seconds = Math.ceil(s.timeLeft);
+  el.clock.innerHTML = `${icon('clock', { size: 14 })}<span>${seconds}s</span>`;
+  el.clock.setAttribute('aria-label', `${seconds} seconds left`);
 }
 
 function rand(min, max) {

@@ -17,15 +17,20 @@
   <link rel="stylesheet" href="css/classic.css" />
 </head>
 <body>
+  <!-- A stadium at night, drawn rather than photographed: floodlight beams, a
+       crowd of bokeh, mown stripes and the centre circle. Tints per league. -->
   <div class="pitch-bg" aria-hidden="true">
     <div class="pitch-glow pitch-glow-a"></div>
     <div class="pitch-glow pitch-glow-b"></div>
+    <div class="pitch-beams"></div>
+    <div class="pitch-crowd"></div>
+    <div class="pitch-turf"></div>
     <div class="pitch-lines"></div>
   </div>
 
   <!-- Sound toggle lives outside the screens so it is reachable everywhere -->
   <button id="sound-toggle" class="sound-toggle" type="button" aria-label="Toggle sound">
-    <span class="sound-toggle__icon" aria-hidden="true">🔊</span>
+    <span class="sound-toggle__icon" aria-hidden="true"></span>
   </button>
 
   <main id="app" class="app">
@@ -34,15 +39,9 @@
     <section class="screen screen--home" data-screen="home">
       <div class="home__top">
         <div class="brand">
-          <div class="brand__mark" aria-hidden="true">
-            <svg viewBox="0 0 64 64" role="presentation">
-              <circle cx="32" cy="32" r="29" class="ball-base" />
-              <path class="ball-mark" d="M32 11l10 7-4 12H26l-4-12z" />
-              <path class="ball-mark" d="M13 30l10 7-4 12-11-4z" />
-              <path class="ball-mark" d="M51 30l-10 7 4 12 11-4z" />
-            </svg>
-          </div>
-          <h1 class="brand__title">Match<span>The</span>Player</h1>
+          <img class="brand__mark" src="assets/ui/logo.webp" width="480" height="485"
+            alt="Match The Player" fetchpriority="high" decoding="async" />
+          <h1 class="brand__title visually-hidden">Match The Player</h1>
           <p class="brand__tag">Know the shirt. Know the career.</p>
         </div>
       </div>
@@ -83,7 +82,7 @@
     <!-- ================ LEAGUE SELECTION ================ -->
     <section class="screen screen--pick" data-screen="league" hidden>
       <header class="screen__head">
-        <button class="btn btn--icon" type="button" data-action="back" aria-label="Back">←</button>
+        <button class="btn btn--icon" type="button" data-action="back" aria-label="Back" data-icon="back"></button>
         <h2 class="screen__title">Choose a league</h2>
       </header>
       <div class="league-grid" id="league-grid"><!-- rendered by ui.js --></div>
@@ -92,7 +91,7 @@
     <!-- ============== DIFFICULTY SELECTION ============== -->
     <section class="screen screen--pick" data-screen="difficulty" hidden>
       <header class="screen__head">
-        <button class="btn btn--icon" type="button" data-action="back" aria-label="Back">←</button>
+        <button class="btn btn--icon" type="button" data-action="back" aria-label="Back" data-icon="back"></button>
         <h2 class="screen__title">Pick your level</h2>
       </header>
       <p class="screen__sub" id="difficulty-league-label"></p>
@@ -111,7 +110,7 @@
     <!-- ===================== GAME ===================== -->
     <section class="screen screen--game" data-screen="game" hidden>
       <header class="hud">
-        <button class="btn btn--icon" type="button" data-action="quit" aria-label="Back to menu">←</button>
+        <button class="btn btn--icon" type="button" data-action="quit" aria-label="Back to menu" data-icon="back"></button>
         <div class="hud__score">
           <span class="hud__score-value" id="hud-score">0</span>
           <span class="hud__score-delta" id="hud-delta"></span>
@@ -142,7 +141,7 @@
     <!-- ============ ORIGINAL MODE (falling cards) ============ -->
     <section class="screen screen--arena" data-screen="arena" hidden>
       <header class="hud">
-        <button class="btn btn--icon" type="button" data-action="quit" aria-label="Back to menu">&larr;</button>
+        <button class="btn btn--icon" type="button" data-action="quit" aria-label="Back to menu" data-icon="back"></button>
         <div class="hud__score">
           <span class="hud__score-value" id="arena-score">0</span>
         </div>
@@ -196,7 +195,7 @@
     <!-- ================== HIGH SCORES ================== -->
     <section class="screen screen--pick" data-screen="scores" hidden>
       <header class="screen__head">
-        <button class="btn btn--icon" type="button" data-action="back" aria-label="Back">←</button>
+        <button class="btn btn--icon" type="button" data-action="back" aria-label="Back" data-icon="back"></button>
         <h2 class="screen__title">Your records</h2>
       </header>
       <div class="scores-list" id="scores-list"></div>

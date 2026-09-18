@@ -6,6 +6,7 @@
 import { SCORING } from './config.js';
 import { createGame } from './engine.js';
 import { clubOption, playerCard } from './components.js';
+import { icon } from './art.js';
 import { sfx } from './audio.js';
 import { store } from './storage.js';
 
@@ -37,6 +38,7 @@ export function startGame({ league, difficulty, mode, players }) {
   el.bar.classList.remove('is-low', 'is-critical');
   renderLives();
   renderHud();
+  sfx.whistle();          // kick-off
   nextQuestion();
 
   lastFrame = performance.now();
@@ -90,7 +92,13 @@ function nextQuestion() {
 
   el.feedback.className = 'feedback';
   el.feedback.textContent = '';
-  el.progress.textContent = `Q${game.state.asked}`;
+  setChip(el.progress, 'target', game.state.asked, `Question ${game.state.asked}`);
+}
+
+/** An icon, a number, and a label for anyone who cannot see the icon. */
+function setChip(node, iconName, value, label) {
+  node.innerHTML = `${icon(iconName, { size: 13 })}<span>${value}</span>`;
+  node.setAttribute('aria-label', label);
 }
 
 function handleClick(event) {
@@ -180,19 +188,20 @@ function setFeedback(cls, text) {
 function renderHud() {
   const s = game.state;
   el.score.textContent = s.score;
-  el.streak.textContent = `Streak ${s.streak}`;
-  el.combo.textContent = `x${s.combo}`;
+  setChip(el.streak, 'flame', s.streak, `Streak ${s.streak}`);
+  setChip(el.combo, 'bolt', `x${s.combo}`, `Combo multiplier x${s.combo}`);
   el.combo.classList.toggle('is-hot', s.combo > 1);
-  el.progress.textContent = `Q${s.asked}`;
+  setChip(el.progress, 'target', s.asked, `Question ${s.asked}`);
 }
 
 function renderLives() {
   if (!game.mode.useLives) {
-    el.lives.innerHTML = '<span class="chip">∞ lives</span>';
+    el.lives.innerHTML = `<span class="chip" aria-label="Unlimited lives">${icon('ball', { size: 13 })}<span>&infin;</span></span>`;
     return;
   }
   const total = game.state.maxLives;
   const left = Math.max(0, game.state.lives);
+  el.lives.setAttribute('aria-label', `${left} of ${total} lives left`);
   el.lives.innerHTML = Array.from({ length: total }, (_, i) =>
     `<span class="life ${i < left ? '' : 'is-lost'}"></span>`).join('');
 }

@@ -92,6 +92,53 @@ ol, ul { padding: 0; list-style: none; }
   background: radial-gradient(circle, var(--accent-2) 0%, transparent 68%);
   opacity: 0.14;
 }
+/* Four floodlight beams raking down from the roof of the stand */
+.pitch-beams {
+  position: absolute;
+  inset: -10% -20% 30%;
+  opacity: 0.5;
+  background:
+    conic-gradient(from 168deg at 14% -6%, transparent 0deg, color-mix(in srgb, var(--accent) 22%, transparent) 5deg, transparent 11deg),
+    conic-gradient(from 176deg at 38% -8%, transparent 0deg, rgba(255,255,255,.1) 4deg, transparent 9deg),
+    conic-gradient(from 184deg at 62% -8%, transparent 0deg, rgba(255,255,255,.1) 4deg, transparent 9deg),
+    conic-gradient(from 192deg at 86% -6%, transparent 0deg, color-mix(in srgb, var(--accent-2) 24%, transparent) 5deg, transparent 11deg);
+  filter: blur(14px);
+  transition: background 600ms ease;
+}
+
+/* The far stand: thousands of small out-of-focus lights */
+.pitch-crowd {
+  position: absolute;
+  left: 0; right: 0; top: 24%;
+  height: 26%;
+  opacity: 0.16;
+  background-image:
+    radial-gradient(1.6px 1.6px at 12% 30%, #fff, transparent 60%),
+    radial-gradient(1.4px 1.4px at 37% 62%, #fff, transparent 60%),
+    radial-gradient(1.8px 1.8px at 61% 22%, #fff, transparent 60%),
+    radial-gradient(1.3px 1.3px at 84% 54%, #fff, transparent 60%),
+    radial-gradient(1.5px 1.5px at 24% 78%, #fff, transparent 60%),
+    radial-gradient(1.4px 1.4px at 73% 84%, #fff, transparent 60%);
+  background-size: 90px 70px, 130px 96px, 76px 62px, 112px 84px, 148px 70px, 96px 78px;
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 45%, transparent);
+  mask-image: linear-gradient(180deg, transparent, #000 45%, transparent);
+}
+
+/* Mown stripes, fading as the pitch recedes */
+.pitch-turf {
+  position: absolute;
+  left: -10%; right: -10%; bottom: 0;
+  height: 46%;
+  opacity: 0.07;
+  background: repeating-linear-gradient(
+    98deg,
+    rgba(255, 255, 255, 0.85) 0 26px,
+    transparent 26px 56px
+  );
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 70%);
+  mask-image: linear-gradient(180deg, transparent, #000 70%);
+}
+
 /* Faint pitch markings so the background reads as a stadium, not a gradient */
 .pitch-lines {
   position: absolute;
@@ -185,6 +232,9 @@ ol, ul { padding: 0; list-style: none; }
 .btn--ghost { background: var(--panel); color: var(--text-dim); }
 .btn--ghost:hover { color: var(--text); background: var(--panel-strong); }
 .btn--danger { color: var(--bad); border-color: rgba(255, 77, 94, 0.25); }
+.icon { display: block; flex: 0 0 auto; }
+.btn--icon > .icon { margin: 0 auto; }
+
 .btn--icon {
   width: 42px; height: 42px;
   padding: 0;
@@ -203,8 +253,9 @@ ol, ul { padding: 0; list-style: none; }
 .stat__label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-faint); }
 
 /* ---------- Chips --------------------------------------------------------- */
+.chip .icon { opacity: 0.8; }
 .chip {
-  display: inline-flex; align-items: center; gap: 5px;
+  display: inline-flex; align-items: center; gap: 4px;
   padding: 5px 11px;
   border-radius: 999px;
   background: var(--panel);
@@ -233,7 +284,7 @@ ol, ul { padding: 0; list-style: none; }
 }
 .sound-toggle:active { transform: scale(0.92); }
 .sound-toggle.is-muted { opacity: 0.45; }
-.sound-toggle__icon { font-size: 1rem; line-height: 1; }
+.sound-toggle__icon { display: grid; place-items: center; line-height: 0; color: var(--text); }
 
 /* ---------- Modal --------------------------------------------------------- */
 .modal { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; padding: 20px; }

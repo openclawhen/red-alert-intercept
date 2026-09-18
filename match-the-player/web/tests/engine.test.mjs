@@ -71,6 +71,23 @@ for (const league of playable) {
   });
 }
 
+check('almost every Israeli player has a real photograph', () => {
+  const ps = await0['israeli-premier-league'];
+  const withPhoto = ps.filter((p) => p.image).length;
+  assert(withPhoto / ps.length >= 0.98, `${withPhoto}/${ps.length} have photos`);
+  const broken = ps.filter((p) => p.image && !p.image.startsWith('assets/players/'));
+  assert(broken.length === 0, `odd image paths: ${broken.slice(0, 3).map((p) => p.image)}`);
+});
+
+check('every player id and image path is plain ASCII', () => {
+  for (const lg of playable) {
+    for (const p of await0[lg.id]) {
+      assert(/^[\x20-\x7E]*$/.test(p.id), `${lg.id}: non-ascii id ${p.id}`);
+      assert(/^[\x20-\x7E]*$/.test(p.image), `${lg.id}: non-ascii image ${p.image}`);
+    }
+  }
+});
+
 console.log('\n# scoring');
 check('main club is always worth 100', () => {
   const player = { clubs: [{ strength: 12 }, { strength: 4 }], topStrength: 12, mainClubIds: [] };

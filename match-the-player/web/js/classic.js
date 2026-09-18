@@ -66,7 +66,24 @@ export async function openClassic(allLeagues, exitHandler) {
   fit();
   window.addEventListener('resize', fit);
   window.addEventListener('orientationchange', fit);
+  await showBoot();
   showScreen('home');
+}
+
+/**
+ * BOOTLOADING.png shipped with the original but its flow never showed it.
+ * It earns its keep here: it covers the moment the classic art is fetched.
+ */
+async function showBoot() {
+  showScreen('boot');
+  const art = ['home.webp', 'modes.webp', 'difficulty.webp', 'pitch.webp', 'card.webp'];
+  const warm = Promise.all(art.map((file) => new Promise((done) => {
+    const img = new Image();
+    img.onload = img.onerror = done;
+    img.src = `assets/classic/${file}`;
+  })));
+  // let the screen be seen, but never hold the game up for longer than it takes
+  await Promise.all([warm, new Promise((done) => setTimeout(done, 1100))]);
 }
 
 export function closeClassic() {
@@ -111,6 +128,7 @@ function build() {
     e.currentTarget.hidden = true;
   });
 
+  buildBoot();
   buildHome();
   buildModes();
   buildDifficulty();
@@ -136,7 +154,8 @@ function bg(parent, file) {
   img.className = 'classic-bg';
   img.src = `assets/classic/${file}`;
   img.alt = '';
-  img.loading = 'lazy';
+  // the loading screen is the first thing on screen, so it cannot wait
+  img.loading = file === 'boot.webp' ? 'eager' : 'lazy';
   img.decoding = 'async';
   img.draggable = false;
   parent.appendChild(img);
@@ -187,6 +206,15 @@ function showScreen(name) {
   Object.entries(screens).forEach(([key, node]) => { node.hidden = key !== name; });
   if (name !== 'pitch') stopRound();
   if (name === 'home' || name === 'highscores') refreshHud();
+}
+
+/* ========================================================================== */
+/*  BOOT - BOOTLOADING.png                                                     */
+/* ========================================================================== */
+
+function buildBoot() {
+  const s = addScreen('boot');
+  bg(s, 'boot.webp');
 }
 
 /* ========================================================================== */
@@ -445,6 +473,7 @@ function startRound(difficultyId) {
   timeText.textContent = String(game.state.maxTime);
 
   showScreen('pitch');
+  sfx.whistle();          // kick-off
   spawnCard();
 
   lastFrame = performance.now();

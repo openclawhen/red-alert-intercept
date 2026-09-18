@@ -1704,7 +1704,7 @@
   {
    "id": "il-088",
    "name": "חיים מגרלשוילי",
-   "image": "",
+   "image": "assets/players/israeli-premier-league/il-088.webp",
    "nationality": "ישראל",
    "position": "",
    "league": "israeli-premier-league",
@@ -3500,6 +3500,101 @@
      "id": "hapoel-tel-aviv",
      "name": "הפועל תל אביב",
      "weight": 40
+    }
+   ]
+  },
+  {
+   "id": "il-201",
+   "name": "יוסי בניון",
+   "image": "assets/players/israeli-premier-league/il-201.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    },
+    {
+     "id": "beitar-jerusalem",
+     "name": "בית\"ר ירושלים",
+     "weight": 60
+    },
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 25
+    }
+   ]
+  },
+  {
+   "id": "il-202",
+   "name": "רוני רוזנטל",
+   "image": "assets/players/israeli-premier-league/il-202.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-haifa",
+     "name": "מכבי חיפה",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-203",
+   "name": "אבי כהן",
+   "image": "assets/players/israeli-premier-league/il-203.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "maccabi-tel-aviv",
+     "name": "מכבי תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-204",
+   "name": "רפעת תורכ",
+   "image": "assets/players/israeli-premier-league/il-204.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
+    }
+   ]
+  },
+  {
+   "id": "il-205",
+   "name": "וינסנט אנייאמה",
+   "image": "assets/players/israeli-premier-league/il-205.webp",
+   "nationality": "ישראל",
+   "position": "",
+   "league": "israeli-premier-league",
+   "currentClub": "",
+   "tier": "easy",
+   "clubs": [
+    {
+     "id": "hapoel-tel-aviv",
+     "name": "הפועל תל אביב",
+     "weight": 100
     }
    ]
   }

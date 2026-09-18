@@ -4,6 +4,7 @@
    ========================================================================== */
 
 import { careerOf } from './data.js';
+import { badgeSvg, shirtSvg, tierMetal } from './art.js';
 
 export function escapeHtml(value = '') {
   return String(value).replace(/[&<>"']/g, (ch) => ({
@@ -30,14 +31,14 @@ export function initialsOf(name = '') {
    A monogram, not a crest. If a real logo has been added to assets/clubs/ and
    registered in data/club-logos.json, that image is used instead.
    -------------------------------------------------------------------------- */
-export function clubBadge(club, logoSet) {
-  const style = `background:${club.bg};color:${club.fg}`;
+export function clubBadge(club, logoSet, { size = 34 } = {}) {
   if (logoSet && logoSet.has(club.id)) {
-    return `<span class="club-badge" style="${style}">
-      <img src="assets/clubs/${encodeURIComponent(club.id)}.png" alt="" loading="lazy" decoding="async" width="34" height="34">
+    return `<span class="club-badge club-badge--real">
+      <img src="assets/clubs/${encodeURIComponent(club.id)}.png" alt="${escapeHtml(club.name)}"
+        loading="lazy" decoding="async" width="${size}" height="${size}">
     </span>`;
   }
-  return `<span class="club-badge" style="${style}" aria-hidden="true">${escapeHtml(club.short || initialsOf(club.name))}</span>`;
+  return `<span class="club-badge">${badgeSvg(club, { size })}</span>`;
 }
 
 /* ---------- Player portrait ------------------------------------------------
@@ -50,11 +51,11 @@ function portrait(player, revealName) {
       alt="${revealName ? escapeHtml(player.name) : 'Mystery player'}"
       loading="lazy" decoding="async">`;
   }
-  // When the name is still hidden the initials would give it away, so show a blank
-  const badge = revealName ? (escapeHtml(initialsOf(player.name)) || '?') : '?';
-  return `<div class="portrait-fallback">
-      <span class="portrait-fallback__ring" aria-hidden="true"></span>
-      <span class="portrait-fallback__initials ${revealName ? '' : 'is-masked'}">${badge}</span>
+  // A shirt with his initials on the back. When the name is still hidden the
+  // initials would give it away, so the shirt wears a question mark instead.
+  const metal = tierMetal(player.tier);
+  return `<div class="portrait-fallback" style="--metal-a:${metal.a};--metal-b:${metal.b}">
+      ${shirtSvg(escapeHtml(initialsOf(player.name)), { accent: metal.a, masked: !revealName })}
     </div>`;
 }
 
@@ -81,7 +82,10 @@ export function playerCard(player, difficulty, { revealed = false, tint = 'rgba(
     if (!givesItAway && !isFiller) facts.push(`Now: ${player.currentClub}`);
   }
 
-  return `<article class="player-card" style="--card-tint:${tint}">
+  const metal = tierMetal(player.tier);
+  return `<article class="player-card player-card--${player.tier}"
+    style="--card-tint:${tint};--metal-a:${metal.a};--metal-b:${metal.b}">
+    <span class="player-card__tier" aria-label="${metal.name} card">${escapeHtml(metal.name)}</span>
     <div class="player-card__frame ${player.image ? '' : 'player-card__frame--blank'}">${portrait(player, showName)}</div>
     <div class="player-card__body">
       <h2 class="player-card__name ${showName ? '' : 'is-hidden'}" dir="${dirFor(player.name)}">${name}</h2>
@@ -110,7 +114,7 @@ export function careerList(player, league = null) {
 
 export function clubOption(club, index, logoSet) {
   return `<button class="club-option" type="button" data-option="${index}" dir="${dirFor(club.name)}">
-    ${clubBadge(club, logoSet)}
+    ${clubBadge(club, logoSet, { size: 30 })}
     <span class="club-option__name" dir="${dirFor(club.name)}">${escapeHtml(club.name)}</span>
   </button>`;
 }

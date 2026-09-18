@@ -117,6 +117,25 @@ streaks and combos.
 * Ball physics, corner sprites, FPS counter, the 27 MB tutorial video, the
   fixed-size backgrounds, and the `.idea/` project files.
 
+## Art that was in the repository but never on screen
+
+* `LOGO.png` — the game's own badge. The Pygame version never drew it; it is now
+  the brand mark on the modern home screen.
+* `BOOTLOADING.png` — a finished loading screen with its own joke in Hebrew,
+  which `main.py`'s flow never reached. It now covers the classic skin's load.
+* `images/blue|green|red|yellow/` — 53 player photographs with Latin filenames,
+  foldered by club. `red/` turned out to be the full working dump (the same 178
+  Hebrew files as `ISRAELILEAUGE/`) plus a few extras, but blue, green and yellow
+  are genuinely curated. Six came across: a portrait for Haim Megrelashvili, who
+  was the one player in the pool without one, and five legends the Hebrew map
+  never covered — Yossi Benayoun, Ronny Rosenthal, Avi Cohen, Rifat Turk and
+  Vincent Enyeama. Only a club each of them is beyond doubt for was claimed.
+
+Two files were deliberately left alone. `Untitled-1.png` is a real Beitar
+Jerusalem crest, which this project has no licence to redistribute. The three
+`ChatGPT Image …` files are stylised personal photographs of two identifiable
+people and have nothing to do with the game.
+
 ## Problems found in the original
 
 * `card.png` is loaded as lowercase but the file on disk is `Card.png` — that
